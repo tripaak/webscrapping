@@ -1,0 +1,14 @@
+scrap website
+
+https://bookshop.org/books?keywords=python
+
+
+give details of
+    1. book name
+    2. author
+    3. price
+
+
+
+tutorial :
+    https://www.youtube.com/watch?v=XVv6mJpFOb0
