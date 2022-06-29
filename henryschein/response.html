@@ -1,0 +1,2253 @@
+
+
+<!doctype html>
+<html lang="fr-FR">
+<head>
+
+<!-- Google Anti-flicker Script -->
+<style>.async-hide { opacity: 0 !important} </style>
+
+<script>
+// akam-sw.js install script version 1.3.6
+"serviceWorker"in navigator&&"find"in[]&&function(){var e=new Promise(function(e){"complete"===document.readyState||!1?e():(window.addEventListener("load",function(){e()}),setTimeout(function(){"complete"!==document.readyState&&e()},1e4))}),n=window.akamServiceWorkerInvoked,r="1.3.6";if(n)aka3pmLog("akam-setup already invoked");else{window.akamServiceWorkerInvoked=!0,window.aka3pmLog=function(){window.akamServiceWorkerDebug&&console.log.apply(console,arguments)};function o(e){(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"sm.sw.s":e,"sm.sw.v":r}])}var i="/akam-sw.js",a=new Map;navigator.serviceWorker.addEventListener("message",function(e){var n,r,o=e.data;if(o.isAka3pm)if(o.command){var i=(n=o.command,(r=a.get(n))&&r.length>0?r.shift():null);i&&i(e.data.response)}else if(o.commandToClient)switch(o.commandToClient){case"enableDebug":window.akamServiceWorkerDebug||(window.akamServiceWorkerDebug=!0,aka3pmLog("Setup script debug enabled via service worker message"),v());break;case"boomerangMQ":o.payload&&(window.BOOMR_mq=window.BOOMR_mq||[]).push(o.payload)}aka3pmLog("akam-sw message: "+JSON.stringify(e.data))});var t=function(e){return new Promise(function(n){var r,o;r=e.command,o=n,a.has(r)||a.set(r,[]),a.get(r).push(o),navigator.serviceWorker.controller&&(e.isAka3pm=!0,navigator.serviceWorker.controller.postMessage(e))})},c=function(e){return t({command:"navTiming",navTiming:e})},s=null,m={},d=function(){var e=i;return s&&(e+="?othersw="+encodeURIComponent(s)),function(e,n){return new Promise(function(r,i){aka3pmLog("Registering service worker with URL: "+e),navigator.serviceWorker.register(e,n).then(function(e){aka3pmLog("ServiceWorker registration successful with scope: ",e.scope),r(e),o(1)}).catch(function(e){aka3pmLog("ServiceWorker registration failed: ",e),o(0),i(e)})})}(e,m)},g=navigator.serviceWorker.__proto__.register;if(navigator.serviceWorker.__proto__.register=function(n,r){return n.includes(i)?g.call(this,n,r):(aka3pmLog("Overriding registration of service worker for: "+n),s=new URL(n,window.location.href),m=r,navigator.serviceWorker.controller?new Promise(function(n,r){var o=navigator.serviceWorker.controller.scriptURL;if(o.includes(i)){var a=encodeURIComponent(s);o.includes(a)?(aka3pmLog("Cancelling registration as we already integrate other SW: "+s),navigator.serviceWorker.getRegistration().then(function(e){n(e)})):e.then(function(){aka3pmLog("Unregistering existing 3pm service worker"),navigator.serviceWorker.getRegistration().then(function(e){e.unregister().then(function(){return d()}).then(function(e){n(e)}).catch(function(e){r(e)})})})}else aka3pmLog("Cancelling registration as we already have akam-sw.js installed"),navigator.serviceWorker.getRegistration().then(function(e){n(e)})}):g.call(this,n,r))},navigator.serviceWorker.controller){var u=navigator.serviceWorker.controller.scriptURL;u.includes("/akam-sw.js")||u.includes("/akam-sw-preprod.js")||u.includes("/threepm-sw.js")||(aka3pmLog("Detected existing service worker. Removing and re-adding inside akam-sw.js"),s=new URL(u,window.location.href),e.then(function(){navigator.serviceWorker.getRegistration().then(function(e){m={scope:e.scope},e.unregister(),d()})}))}else e.then(function(){window.akamServiceWorkerPreprod&&(i="/akam-sw-preprod.js"),d()});if(window.performance){var w=window.performance.timing,l=w.responseEnd-w.responseStart;c(l)}e.then(function(){t({command:"pageLoad"})});var k=!1;function v(){window.akamServiceWorkerDebug&&!k&&(k=!0,aka3pmLog("Initializing debug functions at window scope"),window.aka3pmInjectSwPolicy=function(e){return t({command:"updatePolicy",policy:e})},window.aka3pmDisableInjectedPolicy=function(){return t({command:"disableInjectedPolicy"})},window.aka3pmDeleteInjectedPolicy=function(){return t({command:"deleteInjectedPolicy"})},window.aka3pmGetStateAsync=function(){return t({command:"getState"})},window.aka3pmDumpState=function(){aka3pmGetStateAsync().then(function(e){aka3pmLog(JSON.stringify(e,null,"\t"))})},window.aka3pmInjectTiming=function(e){return c(e)},window.aka3pmUpdatePolicyFromNetwork=function(){return t({command:"pullPolicyFromNetwork"})})}v()}}();</script>
+<script>
+(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer', 4000,{'GTM-TRMD5J':true});
+</script>
+
+<!-- End Google Anti-flicker Script -->
+
+<!-- Google Tag Manager -->
+<script>
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}
+)(window,document,'script','dataLayer','GTM-TRMD5J');</script>
+
+
+
+
+
+<!-- End Google Tag Manager -->
+
+    <!-- Code for usercentrics  -->
+    <meta data-privacy-proxy-server="https://privacy-proxy-server.usercentrics.eu" />
+    <script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>
+    <!-- End Code for usercentrics -->
+    <title>
+	Aiguilles anesthésie Intraligamentaires CYBERTECH - 30g S - 0.30x13mm - Boîte de 100 - Henry Schein France
+</title>
+    <!-- Head Begin -->
+    
+
+<!-- This needs to be the first tag under Head after title to support IE compatibility mode -->
+<meta http-equiv="x-ua-compatible" content="IE=edge; IE=11; IE=10; IE=9">
+
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+
+<meta name="keywords" content="Anesthésie-Pharmacie, Aiguillesagrave;nbsp; anestheacute;sie intraligamentaires, CYBERTECH, 4A001882, Aiguilles" />
+<meta name="description" content="Aiguilles &agrave;&nbsp; anesth&eacute;sie intraligamentaires" />
+<meta name="OneWebVersion" content="9.0.0.0" />
+<meta name="EndecaDivisionId" content="dental" />
+<meta name="EndecaLanguage" content="fr-fr" />
+<meta name="robots" content="index, follow" />
+
+        
+
+        
+            <!-- Autogenerated using HTMLHeadWriterUc -->
+            <script type="text/javascript" src="/fr-fr/script/harmony-minified.min.js?t=210426033621" ></script>
+        <script type="text/javascript" src="/script/ui/datepicker/jquery.ui.datepicker-fr-fr.js"></script>
+
+        
+
+        
+
+        
+
+        
+            <!-- CSS Cachebusting -->
+            <link type="text/css" rel="stylesheet" href="/Css/harmony.all.bundle.min.css?t=210426033621" visible="false" />
+        
+
+        
+
+        
+        
+        
+
+    
+
+<!-- begin-cm-header when disabled -->
+<script type="text/javascript" src="/script/hsic_cmDisabled.js"></script>
+<!-- end-cm-header -->
+
+
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/App_Themes/Harmony/images/ico/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/App_Themes/Harmony/images/ico/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/App_Themes/Harmony/images/ico/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/App_Themes/Harmony/images/ico/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/App_Themes/Harmony/images/ico/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/App_Themes/Harmony/images/ico/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/App_Themes/Harmony/images/ico/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/App_Themes/Harmony/images/ico/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/App_Themes/Harmony/images/ico/apple-touch-icon-180x180.png" />
+
+
+<!--Meta tags-->
+<meta charset="utf-8" />
+
+<!--Set initial scale to one and turn off pinch, zoom-->
+<meta id="ctl00_ucHead_metaViewPort" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" name="viewport"></meta>
+<meta name="author" content="Henry Schein" />
+
+<!--Apple full screen mode -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="translucent black" />
+<meta name="HandheldFriendly" content="true" />
+
+<!--Windows 8 meta tags-->
+<meta name="application-name" content="Henry Schein"/>
+<meta name="msapplication-tooltip" content="Henry Schein / Medical / Dental" />
+<meta name="msapplication-TileColor" content="0072bc"/>
+
+<!--[if lt IE 9]>
+    <script src="/App_Themes/Harmony/js/plug-ins/html5shiv.js"></script>
+<![endif]-->
+
+<!--IE font smoothing-->
+<meta http-equiv="cleartype" content="on" />
+
+<!--Roboto - Web Font-->
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900,100' rel='stylesheet' type='text/css'>
+
+<!--Turn off Dialer-->
+<meta name="format-detection" content="telephone=no">
+
+<!-- IE specific to avoid flashing on tap -->
+<meta content="no" name="msapplication-tap-highlight">
+    <!-- Head End -->
+<link href="../../../../../../App_Themes/Harmony/ContentStyle.min.css" type="text/css" rel="stylesheet" /><link href="https://www.henryschein.fr/fr-fr/dental/p/anesthesie-pharmacie/aiguilles/aiguilles-anesthesie-intraligamentaires-cybertech-30g-s-0-30x13mm-boite-de-100/900-6527" rel="canonical" />
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-42978497-0b16-4e2a-b789-a0102b735115","rua.cook":"true","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"true","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="M3PAB-AKXGL-3EP78-8LH7C-U6VEA",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"M3PAB-AKXGL-3EP78-8LH7C-U6VEA";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n="true"=="true"?1:0,t="cookiepresent",a="3fad72qxjaosaymwog4a-f-ce161c8d3-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"32","ak.cp":"712499","ak.ai":parseInt("460713",10),"ak.ol":"0","ak.cr":18,"ak.ipv":4,"ak.proto":"h2","ak.rid":"4192ee28","ak.r":39685,"ak.a2":n,"ak.m":"a","ak.n":"essl","ak.bpcip":"217.64.63.0","ak.cport":62754,"ak.gh":"104.89.116.197","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1637249464","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==XTV7V8+CvFCgez3enARJ58HnfuydDdjFj5jMvkEfWZv8Gvb6u+pb1fEpVsmce3MkfZZWvUfFUqm7mz7qEZk31g/KiqVxmhjh+8M+lVSDB5HtCAh+zw8KUoLGHTu44fzAdmQVdaDKlhMj50bY2mp3R/1pgYhKcvKTNRMM8oPqBD977sAzUPJRhYaFHvK2uTsulPAPubEZzSiU5/CGlJVUBXDmYtVxpA+US6aDavweXUwVXi4jcxjw5eHmHmSUMHcaXgNdmDKDogdATJ1UeiqASUm5nVwktUFc6ygW4cWbFVzTiL7tFyvNBiniD73y3MrEqPyAdjJyCBP/2QifOAK7tJvA/E90BKylXkvN6gkrjZirJPCm/7lD4uP7JGg+9WETJ6M1X4X42QSOUhjNBJZ18otWWTQNOaTDfZsN4xDmNu4=","ak.pv":"72","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body id="Supplies" class="hs-product-list hs-product harmony-shopping-productdetails not-loggedin fr-fr Harmony flag-price no-compare" style="opacity:0.0;">    
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRMD5J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <form method="post" action="/fr-fr/dental/p/anesthesie-pharmacie/aiguilles/aiguilles-anesthesie-intraligamentaires-cybertech-30g-s-0-30x13mm-boite-de-100/900-6527" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm" novalidate="">
+<div>
+<input type="hidden" name="ctl00_ScriptManager_TSM" id="ctl00_ScriptManager_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPBSN2czo3N2MwZTNmYTlkOTU0M2NlODM1MWZhNGNiNmFhYWI0ZmSqwvG5xNV665DHL0t5Dbh2wckUdA==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=4fDDsW4v1dw6LuATJLbZvcK7JBNPPpM-yIji5bFuA6k5cqxGUGBScHK06KYyetsDO2pLqxQwPaylTSmw4Q1FGKSalBc1&amp;t=635418640260000000" type="text/javascript"></script>
+
+<script> var gIsUserAcceptanceCookieEnabled="false" </script>
+<script type="text/javascript">
+//<![CDATA[
+var _uiConfig = {
+inDevelopmentMode: false,
+richRelevanceIsActive: false,
+backOrderProductReviewIsActive: false,
+backOrderProductModalUrl: '/fr-fr/Shopping/BackOrderProductReview.aspx',
+pageHeaderAnimation: false,
+isHarmony: true,
+isMDMEnabled: false,
+openProductsInPopup: false,
+isCrawler: false,
+priceMod: "post-space",
+currentCountryCode: 'fr',
+zones: undefined,
+isGTMEnabled: true
+}
+$(window).load(function() {
+     fixLayoutForProductDetailFullPage();
+});
+var actionBarOptionsExist = typeof(actionBarOptions) !== 'undefined';
+var actionBarOptionsForPD = {
+"actionBarOptionsExist" : actionBarOptionsExist,
+"isVisible" : "True",
+"canReview" : "True",
+"canCheckout" : "True",
+"canAddToShoppingList" : "False",
+"canSeeBuyingOptions" : "True",
+"page" : "ProductDetail",
+"activePanel" : "secondary-panel"
+};
+var _division = 'dental';var _divisionName = 'Cabinet';var _catalogName = 'GENCABI';var _endecaCatalogName = 'GENCABI';var _culture = 'fr-fr';var _persistFeaturebarAction = 'False';var _isPriceBlocked = 'False';var _isEnhancedEcomEnabled = 'False';var _isVivaLearningEnabled = 'False';var _vivaLearningLink = '';var _currencySymbol = '€';var _isAuthenticated = 'False';var _uId = '';var _n = 'l00aIwLeT/0u0dsRjcqD+NK3obuOHZDReQzPYBJoCfE=';var _canPrice = 'True';var _canAddToCart = 'False';var _isMDMEnabled = 'False';var _browseSupply_ContShoppingKey = '/fr-fr/dental/c/nouveautes/nouveautes';//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=vrWgyxIdeLAhVpOlE7G8Kgza2anH3z0a-G3RwWYSR6sL02FN52Gqu-OmruKkYcglNuUvjjEnIInyTjVtBzCB0B6CdigJV0EA6HpOsc5GjCdxZ7GU_LIixEJaTLeabFnhxQnHL_zp43KUKak_wn62WAo0nmk1&amp;t=42300a4d" type="text/javascript"></script>
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_ScriptManager_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3afr-FR%3af319b152-218f-4c14-829d-050a68bb1a61%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E697C2AF" />
+</div>
+		
+        <!-- Mandatory Controls Begin -->
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+        <!-- Mandatory Controls End -->
+
+        <div class="limit">
+            <div class="hs-slider slide-mobile-menu">
+
+                <!-- Slide Menu-->
+                <div class="nocrawler">
+                    <section class="panel first">
+                        <div class="panel-content mobile-login hs-login" data-role="menu-account" data-login-role="menu-account">
+    <h1 class="slide-title">Mon compte</h1>
+    <section id="ctlLogin" class="login-panel">
+        <div class="hs-form">
+
+<!-- Begin LoginUc.ascx -->
+<div id="ctl00_ucLoginMyAccountSidebar_phInvalid" class="login-overlay" data-id="ctl00_ucLoginMyAccountSidebar">
+    <div class="form-container-holder">
+        <div id="ctl00_ucLoginMyAccountSidebar_divLogin" style="display:block">
+            <div class="hs-form-row">                
+                <a id="ctl00_ucLoginMyAccountSidebar_hypForgotUserId" tabindex="16234" class="forgot" onclick="loginUc.getForgotUserIdUrl(); return false;">Oublié</a>
+                <label for="ctl00_ucLoginMyAccountSidebar_txtLogonName" class="username">Nom utilisateur</label>
+                <input name="ctl00$ucLoginMyAccountSidebar$txtLogonName" id="ctl00_ucLoginMyAccountSidebar_txtLogonName" tabindex="16230" class="hs-input username" type="email" data-sync-value="txtLogonName" />
+            </div>
+            <div class="hs-form-row">                
+                <a id="ctl00_ucLoginMyAccountSidebar_hypForgotPwd" tabindex="16235" class="forgot" onclick="loginUc.getForgotPasswordUrl(); return false;">Oublié</a>
+                <i class="fa fa-eye toggle-password-text"></i>
+                <label for="ctl00_ucLoginMyAccountSidebar_txtPassword" class="password">Mot de passe</label>
+                <input name="ctl00$ucLoginMyAccountSidebar$txtPassword" maxlength="12" id="ctl00_ucLoginMyAccountSidebar_txtPassword" tabindex="16231" class="hs-input password" type="password" data-sync-value="txtPassword" onkeypress="if ((event.which &amp;&amp; event.which == 13) || (event.keyCode &amp;&amp; event.keyCode == 13)) { document.getElementById(&#39;ctl00_ucLoginMyAccountSidebar_btnLoginCallback&#39;).click();return false;} else return true; " />
+            </div>
+            <div class="form-messages small">
+                <span id="ctl00_ucLoginMyAccountSidebar_cvInvalidUser" style="color:Red;display:none;">
+                            <ul class="errors"><li>Vous avez saisi un nom utilisateur et/ou un mot de passe non valides. Saisissez-les de nouveau.</li></ul>                            
+                </span>
+            </div>
+
+            <a class="hs-try-again hs-btn secondary-btn small rounded" onclick="loginUc.onTryAgainClicked(event);">Réessayer</a>
+
+            <div class="hs-form-row">
+                <div class="pull-right">
+                    
+                    <button type="button" class="hs-btn primary-btn rounded x-small" id="ctl00_ucLoginMyAccountSidebar_btnLoginCallback"
+                        onclick="loginUc.authenticateUser(this);"
+                        data-uid="ctl00_ucLoginMyAccountSidebar_txtLogonName"
+                        data-pwd="ctl00_ucLoginMyAccountSidebar_txtPassword"
+                        data-manual-show-loader="<span class='fa fa-spin fa-refresh'></span> Se connecter">
+                        <span class="fa fa-sign-in"></span>&nbsp;&nbsp;Se connecter</button>
+                </div>
+                <div class="pull-right pad-right">
+                    <a onclick="loginUc.getCreateAnOnlineAccountUrl(); return false;" id="ctl00_ucLoginMyAccountSidebar_lnkCreateOnLineButton" class="hs-btn rounded x-small" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ucLoginMyAccountSidebar$lnkCreateOnLineButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Créer un compte</a>
+                </div>
+            </div>
+        </div>
+        <div id="ctl00_ucLoginMyAccountSidebar_divPleaseCallUs" style="display:none">
+            <div class="hs-form-row">
+                <p>
+                    <span id="ctl00_ucLoginMyAccountSidebar_lblTooMuchAttemptsMessage"></span>
+                </p>
+                <div id="ctl00_ucLoginMyAccountSidebar_pnlContactInfo" style="display: none">
+	
+                    Pour toute assistance supplémentaire, n'hésitez pas à nous contacter Support Technique Internet au 02 47 68 50 11 (Coût d'une communication locale), du lundi au vendredi entre 8h30 et 17h00.
+                
+</div>
+                                
+                <a id="ctl00_ucLoginMyAccountSidebar_hypForgotUserId_PleaseCallUs" onclick="loginUc.getForgotUserIdUrl(); return false;">Vous avez oublié votre nom utilisateur?</a>
+                <a id="ctl00_ucLoginMyAccountSidebar_hypForgotPassword_PleaseCallUs" onclick="loginUc.getForgotPasswordUrl(); return false;">Vous avez oublié votre mot de passe?</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End LoginUc.ascx -->
+
+        </div>
+    </section>
+</div>
+
+<div class="mobile-menu panel-content selected" data-role="menu-All">
+    <h1 class="slide-title">Menu</h1>
+    <nav class="sub-menu">
+       <div class="hs-accordion" data-clone="cloned-menu-All" data-clean="id" data-hook="callbackForCleaningMenuHTMLBeforeClone" >
+<ul class="hs-accordion indented-menu" >
+<li>
+<h2 class=" heading ">
+Information coronavirus</h2>
+<ul class="content">
+<li ><a href="/cabinet/coronavirus/information-coronavirus.aspx?sc_lang=fr-fr&hssc=1"   >Informations Coronavirus</a></li><li  class=" ellipsis"><a  class=" ellipsis" href="/cabinet/coronavirus/rapid-response-test-serologique.aspx?sc_lang=fr-fr&hssc=1">Rapid Response Test Serologique</a></li>
+<li  class=" ellipsis"><a  class=" ellipsis" href="/cabinet/coronavirus/rapid-response-test-antigenique.aspx?sc_lang=fr-fr&hssc=1">Rapid Response Test Antigenique</a></li>
+</ul>
+</li>
+<li>
+<h2 class=" heading ">
+Commander</h2>
+<ul class="content">
+<li class="bg-lite"><div class="hs-form quick-order section-bg">
+    <div class="hs-form-row no-margin">
+        <div class="half pad-right">
+            <label class="x-small" for="SideMenuControl1000txtItemCodeId">Code article</label>
+            <input onclick="this.value = '';" value="" onkeypress="javascript:if (EnterKeyPressed(event)) { var index = $('.quick-add-text').index(document.activeElement) + 1;$('.quick-add-text').eq(index).focus();return false; }" id="SideMenuControl1000txtItemCodeId" name="SideMenuControl1000txtItemCodeId" value="" class="rounded x-small text-itemcode quick-add-text" maxlength="25" type="text" />
+        </div>
+        <div class="quarter">
+            <label class="x-small" for="SideMenuControl1000txtItemQtyId">Qté</label>
+            <input onclick="this.value = '';" value="" onkeypress="javascript:if (EnterKeyPressed(event)) { QuickAddItemHarmony('SideMenuControl1000txtItemCodeId','SideMenuControl1000txtItemQtyId','fr-fr','3','25', 'Vous devez saisir une quantité d\'articles à ajouter à votre commande.', 'Vous devez saisir un code article valide pour ajouter des produits à votre commande.', 'Vous devez saisir un code article valide et une quantité pour ajouter des produits à votre commande.', 'false', this);; return false; }" id="SideMenuControl1000txtItemQtyId" name="SideMenuControl1000txtItemQtyId" value="" class="rounded x-small text-qty quick-add-text" maxlength="5" type="number" min="1" />
+        </div>
+        <div class="quarter pad-left push-right x-small pad-top">
+            <button type="button" id="item-cart" onclick="javascript:QuickAddItemHarmony('SideMenuControl1000txtItemCodeId','SideMenuControl1000txtItemQtyId','fr-fr','3','25', 'Vous devez saisir une quantité d\'articles à ajouter à votre commande.', 'Vous devez saisir un code article valide pour ajouter des produits à votre commande.', 'Vous devez saisir un code article valide et une quantité pour ajouter des produits à votre commande.', 'false', this);" class="hs-btn primary-btn rounded x-small quick-add"><i class="fa fa-cart-plus large"></i></button>
+        </div>
+    </div>
+    <div class="hs-form-row push-right no-margin-bottom"><a class="small margin-top" href="https://www.henryschein.fr/fr-fr/Shopping/QuickOrder.aspx">Saisir plus</a></div>
+</div>
+</li><li  class=" ellipsis"><a  class=" ellipsis" href="/fr-fr/Orders/ItemsFromHistory.aspx">Commander depuis l'historique </a></li>
+<li  class=" ellipsis"><a  class=" ellipsis" href="/fr-fr/shopping/SupplyBrowser.aspx">Parcourir la liste des produits</a></li>
+<li ><a  href="javascript:BrowseWindow('https://www.henryschein.fr/fr-fr/Shopping/SpeedEntry/SpeedEntry.aspx', 1, '_new', '420', '660');">Commande express</a></li>
+<li ><a  href="/fr-fr/Shopping/ShoppingLists.aspx">Mes listes d'achats </a></li>
+<li ><a  href="/fr-fr/Shopping/CurrentCart.aspx?Cart=New">Mon panier </a></li>
+<li ><a  href="/fr-fr/Orders/UnplacedOrders.aspx">Commandes en cours</a></li>
+<li ><a href="/cabinet/flyers/flyers.aspx?sc_lang=fr-fr&hssc=1"   >Flyers et catalogues</a></li><li ><a  href="/cabinet/livraison-et-retours.aspx?sc_lang=fr-fr&hssc=1">Livraison et retours </a></li>
+<li ><a  href="/cabinet/qui-sommes-nous/qui-sommes-nous/questions-frequentes.aspx?sc_lang=fr-fr&hssc=1">Questions Fréquentes</a></li>
+</ul>
+</li>
+<li>
+<h2 class=" heading ">
+A la une </h2>
+<ul class="content">
+<li ><a  href="/cabinet/actualites/webinaires.aspx?sc_lang=fr-fr&hssc=1">Webinaires</a></li>
+<li ><a  href="/cabinet/actualites/microcopy.aspx?sc_lang=fr-fr&hssc=1">Neodiamond Microcopy</a></li>
+<li ><a  href="/cabinet/actualites/zyris-isolite.aspx?sc_lang=fr-fr&hssc=1">Isolite</a></li>
+<li ><a  href="/cabinet/actualites/edgeendo.aspx?sc_lang=fr-fr&hssc=1">EdgeEndo</a></li>
+<li  class=" ellipsis"><a  class=" ellipsis" href="/cabinet/actualites/esthetique.aspx?sc_lang=fr-fr&hssc=1">+ de rentabilité avec l'éclaircissement</a></li>
+<li ><a  href="/cabinet/etch-gel.aspx?sc_lang=fr-fr&hssc=1">Etch Gel</a></li>
+<li  class=" ellipsis"><a  class=" ellipsis" href="/cabinet/actualites/nouvelle-convention.aspx?sc_lang=fr-fr&hssc=1">Nouvelle convention, + d'opportunités</a></li>
+<li ><a  href="/cabinet/reveal-aligneurs-transparents-nouvelle-generation.aspx?sc_lang=fr-fr&hssc=1">Reveal Clear Aligners</a></li>
+<li ><a  href="/cabinet/actualites/actualites/cfao.aspx?sc_lang=fr-fr&hssc=1">Trucs et Astuces en CFAO</a></li>
+<li ><a  href="/cabinet/actualites/white-dental-beauty.aspx?sc_lang=fr-fr&hssc=1">White Dental Beauty</a></li>
+</ul>
+</li>
+<li>
+<h2 class=" heading ">
+Materiel</h2>
+<ul class="content">
+<li ><a  href="javascript:BrowseWindow('http://www.henryschein-materiel.fr/conception-de-cabinets/concepts/', 1, '_blank', '520', '602');">Conception de cabinets</a></li>
+<li ><a  href="javascript:BrowseWindow('https://online.flippingbook.com/view/826532528/', 1, '_blank', '520', '602');">Catalogue des produits</a></li>
+<li ><h3 class="sub-heading ">Purificateurs d'air</h3>
+<ul class="content nested">
+<li ><a  href="/cabinet/materiel/aeramax-professionnel-iii.aspx?sc_lang=fr-fr&hssc=1">Aeramax Professionnel III</a></li>
+<li ><a  href="/cabinet/materiel/radic8.aspx?sc_lang=fr-fr&hssc=1">Radic8</a></li>
+<li ><a  href="/cabinet/materiel/steril-air-pro-techno-gaz.aspx?sc_lang=fr-fr&hssc=1">Steril Air Pro</a></li>
+</ul>
+</li>
+<li ><h3 class="sub-heading ">Aspiration d'aérosols</h3>
+<ul class="content nested">
+<li ><a  href="/cabinet/materiel/ba-optima-eos-350.aspx?sc_lang=fr-fr&hssc=1">BA Optima EOS 350</a></li>
+<li ><a  href="/cabinet/materiel/vacstation.aspx?sc_lang=fr-fr&hssc=1">Vacstation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 class=" heading ">
+Implantologie</h2>
+<ul class="content">
+<li ><a  href="javascript:BrowseWindow('http://www.camlog.fr/fr/', 1, '_blank', '520', '602');">Les implants CAMLOG</a></li>
+<li ><h3 class="sub-heading ">Les biomatériaux</h3>
+<ul class="content nested">
+<li ><a  href="/cabinet/implantologie/implantologie/produits/gamme-ace.aspx?sc_lang=fr-fr&hssc=1&id=100">Gamme ACE</a></li>
+<li ><a  href="/cabinet/implantologie/implantologie/produits/activioss.aspx?sc_lang=fr-fr&hssc=1">Gamme NORAKER</a></li>
+</ul>
+</li>
+<li ><a  href="http://www.henryschein-formation.fr/formations/2/Implantologie">Henry Schein Formation</a></li>
+<li ><a  href="/cabinet/implantologie/implantologie/event.aspx?sc_lang=fr-fr&hssc=1">Evénements</a></li>
+<li ><a  href="/cabinet/implantologie/implantologie/contact.aspx?sc_lang=fr-fr&hssc=1">Contact</a></li>
+<li  class=" ellipsis"><a  class=" ellipsis" href="/cabinet/implantologie/implantologie/produits/gamme-dess.aspx?sc_lang=fr-fr&hssc=1">Les piliers compatibles DESS</a></li>
+</ul>
+</li>
+<li>
+<h2 class=" heading ">
+Services</h2>
+<ul class="content">
+<li ><a  href="/cabinet/services/services/services-schein.aspx?sc_lang=fr-fr&hssc=1">Les services Schein</a></li>
+<li ><a  href="/cabinet/services/services/les-services-techniques.aspx?sc_lang=fr-fr&hssc=1">Les services techniques</a></li>
+<li ><a  href="javascript:BrowseWindow('http://www.henryschein-materiel.fr/services-2/financement/', 1, '_blank', '520', '602');">Henry Schein Financement</a></li>
+<li ><a  href="javascript:BrowseWindow('http://www.henryschein-formation.fr/', 1, '_blank', '520', '602');">Henry Schein Formation</a></li>
+</ul>
+</li>
+<li>
+<h2 class=" heading ">
+Qui sommes nous</h2>
+<ul class="content">
+<li ><a  href="/cabinet/qui-sommes-nous/qui-sommes-nous/henry-schein-france.aspx?sc_lang=fr-fr&hssc=1&id=top">Henry Schein France</a></li>
+<li ><a  href="/cabinet/qui-sommes-nous/qui-sommes-nous/nos-agences.aspx?sc_lang=fr-fr&hssc=1&id=top">Nos Agences</a></li>
+<li ><a  href="/cabinet/contact.aspx?sc_lang=fr-fr&hssc=1">Contacts</a></li>
+<li ><a  href="/cabinet/qui-sommes-nous/qui-sommes-nous/nos-valeurs.aspx?sc_lang=fr-fr&hssc=1&id=top">Nos valeurs</a></li>
+<li ><a  href="/cabinet/qui-sommes-nous/qui-sommes-nous/transparence-des-liens.aspx?sc_lang=fr-fr&hssc=1&id=top">Transparence des liens</a></li>
+<li ><a  href="/cabinet/qui-sommes-nous/qui-sommes-nous/recrutement/recrutement.aspx?sc_lang=fr-fr&hssc=1&id=top">Carrières</a></li>
+</ul>
+</li>
+<li>
+<h2 class=" heading ">
+Le Club & ScheinStore</h2>
+<ul class="content">
+<li ><a  href="/cabinet/scheinstore/le-club-et-scheinstore/club.aspx?sc_lang=fr-fr&hssc=1">Le Club</a></li>
+<li ><a  href="/cabinet/scheinstore/le-club-et-scheinstore/scheinstore.aspx?sc_lang=fr-fr&hssc=1">ScheinStore</a></li>
+</ul>
+</li>
+<li>
+<a class=" menu-my-account" id="menuHeader1Auth" href="https://www.henryschein.fr/fr-fr/Profiles/Login.aspx">
+Mon compte</a>
+<ul class="content">
+</ul>
+</li>
+</ul>
+
+       </div>
+    </nav>
+</div>
+
+<a href="#" class="slide-mobile-close"><i class="fa fa-close"></i></a>
+
+
+                        <!-- start: default.master -->
+                        <div class="mobile-filters panel-content selected" data-role="filters">
+                            <h1 class="slide-title">Filtres</h1>
+                            <!-- Appended filters here-->
+						    <ul class="hs-accordion-filters medium-below">
+                                <li>
+                                    <div class="filter-bar hs-form pad expanded">
+                                        <h2 class="x-bold color-dark small">Résultats trouvés dans</h2>
+                                        <div class="hs-select-opt x-small search-select-target"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end: default.master -->
+
+                    </section>
+                </div>
+                <!-- end slide menu-->
+
+                <!-- Main body-->
+                <section class="panel last">
+				
+					<!--Site Theme-->
+					<div id="ctl00_ucDivisionThemeSelections_pnlLoadControls" class="hs-site-theme">
+	
+	<style type="text/css">
+		#theme-banner {
+			background-color:#d6d7d9;
+			line-height: 0;
+			text-align: center;
+		}
+		@media	(max-width:600px){
+			#theme-banner	img	{
+				width: 100%;
+			}
+		}
+	</style>
+	<div id="theme-banner">
+		<!-- <a href="https://issuu.com/henryscheinuk/docs/hsd218-07-21_summer_sale_flyer?fr=sMjM3YTQwNzUyMTA" target="_blank"> -->
+			<img src="/fr-fr/images/cabinet/2021-TopBanner-homepage-CABINET.jpg" alt="livraison gratuite en 24h"/></a>
+	</div>
+</div>
+
+				
+                    <!-- Pre-Header Content-->
+                    <section class="container pre-header pad-right medium-above">
+                        
+<!-- Begin LanguageSelectoryUc.ascx -->
+
+
+
+
+<div id="ctl00_ucLanguageSelector_pnlStandard">
+	
+    
+    <ul class="inline large">
+        <!-- Breadcrumb-->
+        
+        <!-- Language selector-->
+        <li class="x-small">
+            
+            <span class="info">
+                
+            </span>
+            
+        </li>
+
+        
+        
+        <li class="margin-left">
+            <i class="fa fa-phone item-icon pad-right "></i>Cabinet dentaire <a href="tel:0247689000">02 47 68 90 00</a>
+        </li>        
+        
+        <li class="margin-left">
+            <i class="fa fa-phone item-icon pad-right "></i>Implantologie <a href="tel:0247689500">02 47 68 95 00</a>              
+        </li>
+        
+
+        <!-- Contact-->
+        <li class="x-small margin-left">
+            <i class="fa fa-envelope item-icon"></i>
+            <a id="ctl00_ucLanguageSelector_hlkContactUs" href="https://www.henryschein.fr/fr-fr/Cabinet/Contact.aspx">Contactez-nous</a>
+        </li>
+        <!-- Help-->
+        <li id="ctl00_ucLanguageSelector_span_HeaderHelp" class="x-small margin-left" style="display: none">
+            <i class="fa fa-question-circle item-icon"></i>
+            <a id="ctl00_ucLanguageSelector_hlkHelp" onclick="javascript:cmCreatePageviewTag(&#39;Help Link_FR_FR&#39;, &#39;Help&#39;, null, null);" href="javascript:BrowseWindow(&#39;https://www.henryschein.fr/fr-fr/help/main.htm?did=dental&#39;, 1, &#39;Help&#39;, &#39;600&#39;, &#39;800&#39;);">Aide</a>
+        </li>
+    </ul>
+    
+</div>
+<!-- End LanguageSelectoryUc.ascx -->
+
+                    </section>
+                    <!-- End Pre-Header Content-->
+                    <!--Header-->
+                    <header class="hs-header container">
+                        <!-- Page Header Begin -->
+                        <div class="nocrawler">
+                            
+        <nav class="main-menu">
+
+            <!--Start row-->
+            <div class="nav-items ">
+                
+
+ <section class="hs-logo">
+    <h1 class="logo">
+        
+                <a id="ctl00_ucHeader_ucLogoSelector_hlImgLogo" title="Henry Schein France, une filiale du Groupe Henry Schein." href="https://www.henryschein.fr/fr-fr/Cabinet/Default.aspx?did=dental&amp;stay=1">
+                    <img src="/fr-fr/images/logos/logo.dental.small.svg" alt="Henry Schein" class="phablet-above laptop-below">
+                    <img src="/fr-fr/images/logos/logo.dental.svg" alt="Henry Schein" class="laptop-above">
+                </a>
+            
+    </h1>
+</section>
+<!--end left side-->
+
+<section class="hs-small-logo">
+    <h1 class="logo-small">
+        <a href="https://www.henryschein.fr/fr-fr/Cabinet/Default.aspx?did=dental&stay=1">
+            <img src="/App_Themes/Harmony/images/logos/hs-symbol.svg" alt="Henry Schein" /></a>
+    </h1>
+</section>
+
+<script language="javascript" type="text/javascript">
+    //<![CDATA[
+    function RedirectParentAndClose() {
+        window.opener.redirectToDivisionHomePage();
+        window.close();
+    }
+    //]]>
+</script>
+
+                <!--end left side-->
+
+                <section class="primary-menu">
+                    <div class="nocrawler">
+                        <ul>
+<li class="small-above"> <div class="only-on-hang-around"><a href="#top" class="item last smooth-scroll"><i class="fa fa-long-arrow-up"></i><span class="menu-title">Back to top</span></a></div></li>
+<li class="only-on-hang-around"><a class="item" href="https://www.henryschein.fr/fr-fr/Shopping/CurrentCart.aspx"><span class="item-count">0</span><i class="fa fa-shopping-cart"></i><span class="menu-title price-mod">€0.00</span></a></li>
+    <li>
+        <input id="menu-account" type="checkbox" class="hidden"/>
+<div class="item phablet-above no-hover">
+        			<label class="" for="menu-account">
+        			 <i class="fa fa-gears"></i>
+        				<span class="menu-title">Mon compte</span>
+        			</label>
+        			<section class="sub-menu">
+        			    <div class="hs-form">
+        			    </div>
+        			</section>
+        		</div>
+        		<a class="item phablet-below mobile-menu-trigger" data-role="menu-account" href="#">
+        			<i class="fa fa-gears"></i>
+        			<span class="menu-title">Mon compte</span>
+        		</a>
+    <li>
+        <a class="item shop" href="/fr-fr/dental/c/browsesupplies">
+            <i class="fa icon-shop"></i>
+            <span class="menu-title">Shop</span>
+        </a>
+    </li>
+
+    <li class="phablet-below trigger-search">
+      <a class="item search" href ="#">
+         <i class="fa fa-search"></i>
+      </a>
+    </li>
+
+    <li>
+        <input id="All" type="checkbox" class="hidden" />
+        <div class="item phablet-above">
+            <label class="" for="All">
+                <i class="fa fa-navicon"></i>
+            <span class="menu-title">Menu</span>
+            </label>
+            <section class="sub-menu cloned-menu-All">
+            </section>
+        </div>
+        <a class="item phablet-below mobile-menu-trigger" data-role="menu-All" href="#" data-peak="true">
+            <i class="fa fa-navicon"></i>
+            <span class="menu-title">Menu</span>
+        </a>
+    </li>
+
+    <li id="mobile-search" class="primary-search hs-form">
+        
+
+        <div class="search input-btn rounded">
+            <label for="ctl00_ucHeader_ucSearchBarHeaderbar_txtSearch"></label>
+            <input name="ctl00$ucHeader$ucSearchBarHeaderbar$txtSearch" maxlength="38" id="ctl00_ucHeader_ucSearchBarHeaderbar_txtSearch" class="small open" type="search" placeholder="Que pouvons-nous vous aider à trouver?" />
+            <button id="ctl00_ucHeader_ucSearchBarHeaderbar_htmlSearchButton" class="hs-btn secondary-btn rounded hidden target-search-btn" onclick="javascript:ValidForm();return false;" data-show-loader="&lt;i class=&#39;fa fa-spin fa-refresh medium&#39;>&lt;/i>&amp;nbsp;&amp;nbsp;
+                &lt;i class=&quot;fa fa-search large&quot;>&lt;/i>
+            ">
+                <i class="fa fa-search large"></i>
+            </button>
+            <a class="hs-btn secondary-btn rounded proxy-search-btn" 
+                data-show-loader="<i class='fa fa-spin fa-refresh medium'></i>" data-for="ctl00_ucHeader_ucSearchBarHeaderbar_txtSearch">
+                <i class="fa fa-search large"></i>
+            </a>
+        </div>
+
+        <div class="search-opts">
+            <label for="ctl00_ucHeader_ucSearchBarHeaderbar_chkPurchaseHistory" class="checkbox">
+                <input name="ctl00$ucHeader$ucSearchBarHeaderbar$chkPurchaseHistory" type="checkbox" id="ctl00_ucHeader_ucSearchBarHeaderbar_chkPurchaseHistory" value="withinpurchased" class="opt-item-purchased" />                 
+                <span class="check"></span>
+                <span class="label-text"><span id="ctl00_ucHeader_ucSearchBarHeaderbar_lblPurchaseHistory" class="label-text" for="ctl00_ucHeader_ucSearchBarHeaderbar_chkPurchaseHistory">dans les articles achetés</span></span>              
+            </label>
+        </div>
+        <!-- end search options-->
+
+    
+
+
+<script type='text/javascript'>
+<!--
+var isEnhancedSearchNotificationShown = false; 
+function ValidForm()
+{
+     var checkString = (document.all ? document.all["ctl00_ucHeader_ucSearchBarHeaderbar_txtSearch"] : document.getElementById("ctl00_ucHeader_ucSearchBarHeaderbar_txtSearch")).value;
+     if (disableSearchValidation)
+     {
+         disableSearchValidation = false;
+         return false;
+     }
+      if (checkString != '')
+      {
+          DoSearch();
+      }
+ }
+ // -->
+function DoSearch()
+{
+      var checkString = (document.all ? document.all["ctl00_ucHeader_ucSearchBarHeaderbar_txtSearch"] : document.getElementById("ctl00_ucHeader_ucSearchBarHeaderbar_txtSearch")).value;
+      var SAFECHARS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_.!~*'()";
+      var HEX = "0123456789ABCDEF";
+      var encoded = "";
+      for (var i = 0; i < checkString.length; i++ ) {
+           var ch = checkString.charAt(i);
+           if (ch == " ") {
+                  encoded += "+";
+           } else if (SAFECHARS.indexOf(ch) != -1) {
+                  encoded += ch;
+           } else {
+                  var charCode = ch.charCodeAt(0);
+                  encoded += "%";
+                  encoded += HEX.charAt((charCode >> 4) & 0xF);
+                  encoded += HEX.charAt(charCode & 0xF);
+           }
+      }
+var nValue = '';
+      var isCheck = (document.all ? document.all["ctl00_ucHeader_ucSearchBarHeaderbar_chkPurchaseHistory"] : document.getElementById("ctl00_ucHeader_ucSearchBarHeaderbar_chkPurchaseHistory")).checked;
+      if(nValue.length > 1) {
+         encoded = encoded + '&' + nValue;
+      }
+      if(isCheck)
+      {
+         location.href = 'https://www.henryschein.fr/fr-fr/Orders/ItemsFromHistory.aspx?searchkeyWord=' + encoded;
+      }
+      else
+      {
+         location.href = 'https://www.henryschein.fr/fr-fr/Search.aspx?searchkeyWord=' + encoded;
+      }
+}
+var txtSearch = document.all ? document.all["ctl00_ucHeader_ucSearchBarHeaderbar_txtSearch"] : document.getElementById("ctl00_ucHeader_ucSearchBarHeaderbar_txtSearch");
+if (txtSearch != null) {txtSearch.focus();txtSearch.select()};
+var chkPurchaseHistory = document.all ? document.all["ctl00_ucHeader_ucSearchBarHeaderbar_chkPurchaseHistory"] : document.getElementById("ctl00_ucHeader_ucSearchBarHeaderbar_chkPurchaseHistory");
+
+</script>
+<script type='text/javascript'>
+function getParameterByName(name)
+{
+     name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+     var regexS = "[\\\\?&]" + name + "=([^&#]*)";
+     var regex = new RegExp(regexS);
+     var results = regex.exec(window.location.href);
+     if(results == null)
+         return "";
+     else
+        return decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+if (txtSearch!=null) txtSearch.value = getParameterByName('searchkeyWord');
+</script>
+<script language='javascript'  >
+
+function AdvancedSearch_Click()
+{
+    var returnUrl = '/fr-fr/AdvancedSearch.aspx';
+    var params='';
+    
+    if (chkPurchaseHistory.checked)
+    {
+        if (Trim(txtSearch.value).length>0)
+        {
+            params = '?' + 'searchKeyWord' + '=' + txtSearch.value + '&' + 'NoSearchResultsItemHistory' + '=true';
+        }
+        else if (Trim(txtSearch.value).length==0)
+        {
+            params = '?' +  'NoSearchResultsItemHistory' + '=true';
+        }
+    }
+    else {
+        if (Trim(txtSearch.value).length>0)
+        {
+            params = '?' + 'searchKeyWord' + '=' + txtSearch.value;
+        }
+    }
+    returnUrl += params;
+    
+    window.location.href=returnUrl; 
+}
+
+</script>
+
+<!--//HeaderSearchBar-->
+
+    </li>
+
+</ul>
+<script type="text/javascript">window._myOrderItemsCount = 0;</script>
+
+
+                    </div>
+                </section>
+                <!--end right side-->
+            </div>
+            <!--end row-->
+
+            <!--User info-->
+            <div id="header-bar" class="user-info">
+
+                <!-- client address-->
+                <section class="pull-left hs-vcard">
+                    
+
+    <!--Anonymous user-->
+    <div class="anonymous pad-left">
+        <div class="hs-login">
+            <a class="hs-btn primary-btn xx-small rounded medium-below mobile-menu-trigger" data-role="menu-account" href="#">Se connecter</a>
+            <a class="hs-btn primary-btn x-small rounded medium-above tab-like" href="#"><i class="fa fa-sign-in"></i>&nbsp;Se connecter</a>
+            <section class="login-panel">
+                <div class="hs-form">
+                    
+<!-- Begin LoginUc.ascx -->
+<div id="ctl00_ucHeader_ucSessionBar_ucLogin_phInvalid" class="login-overlay" data-id="ctl00_ucHeader_ucSessionBar_ucLogin">
+    <div class="form-container-holder">
+        <div id="ctl00_ucHeader_ucSessionBar_ucLogin_divLogin" style="display:block">
+            <div class="hs-form-row">                
+                <a id="ctl00_ucHeader_ucSessionBar_ucLogin_hypForgotUserId" tabindex="16204" class="forgot" onclick="loginUc.getForgotUserIdUrl(); return false;">Oublié</a>
+                <label for="ctl00_ucHeader_ucSessionBar_ucLogin_txtLogonName" class="username">Nom utilisateur</label>
+                <input name="ctl00$ucHeader$ucSessionBar$ucLogin$txtLogonName" id="ctl00_ucHeader_ucSessionBar_ucLogin_txtLogonName" tabindex="16200" class="hs-input username" type="email" data-sync-value="txtLogonName" />
+            </div>
+            <div class="hs-form-row">                
+                <a id="ctl00_ucHeader_ucSessionBar_ucLogin_hypForgotPwd" tabindex="16205" class="forgot" onclick="loginUc.getForgotPasswordUrl(); return false;">Oublié</a>
+                <i class="fa fa-eye toggle-password-text"></i>
+                <label for="ctl00_ucHeader_ucSessionBar_ucLogin_txtPassword" class="password">Mot de passe</label>
+                <input name="ctl00$ucHeader$ucSessionBar$ucLogin$txtPassword" maxlength="12" id="ctl00_ucHeader_ucSessionBar_ucLogin_txtPassword" tabindex="16201" class="hs-input password" type="password" data-sync-value="txtPassword" onkeypress="if ((event.which &amp;&amp; event.which == 13) || (event.keyCode &amp;&amp; event.keyCode == 13)) { document.getElementById(&#39;ctl00_ucHeader_ucSessionBar_ucLogin_btnLoginCallback&#39;).click();return false;} else return true; " />
+            </div>
+            <div class="form-messages small">
+                <span id="ctl00_ucHeader_ucSessionBar_ucLogin_cvInvalidUser" style="color:Red;display:none;">
+                            <ul class="errors"><li>Vous avez saisi un nom utilisateur et/ou un mot de passe non valides. Saisissez-les de nouveau.</li></ul>                            
+                </span>
+            </div>
+
+            <a class="hs-try-again hs-btn secondary-btn small rounded" onclick="loginUc.onTryAgainClicked(event);">Réessayer</a>
+
+            <div class="hs-form-row">
+                <div class="pull-right">
+                    
+                    <button type="button" class="hs-btn primary-btn rounded x-small" id="ctl00_ucHeader_ucSessionBar_ucLogin_btnLoginCallback"
+                        onclick="loginUc.authenticateUser(this);"
+                        data-uid="ctl00_ucHeader_ucSessionBar_ucLogin_txtLogonName"
+                        data-pwd="ctl00_ucHeader_ucSessionBar_ucLogin_txtPassword"
+                        data-manual-show-loader="<span class='fa fa-spin fa-refresh'></span> Se connecter">
+                        <span class="fa fa-sign-in"></span>&nbsp;&nbsp;Se connecter</button>
+                </div>
+                <div class="pull-right pad-right">
+                    <a onclick="loginUc.getCreateAnOnlineAccountUrl(); return false;" id="ctl00_ucHeader_ucSessionBar_ucLogin_lnkCreateOnLineButton" class="hs-btn rounded x-small" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ucHeader$ucSessionBar$ucLogin$lnkCreateOnLineButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Créer un compte</a>
+                </div>
+            </div>
+        </div>
+        <div id="ctl00_ucHeader_ucSessionBar_ucLogin_divPleaseCallUs" style="display:none">
+            <div class="hs-form-row">
+                <p>
+                    <span id="ctl00_ucHeader_ucSessionBar_ucLogin_lblTooMuchAttemptsMessage"></span>
+                </p>
+                <div id="ctl00_ucHeader_ucSessionBar_ucLogin_pnlContactInfo" style="display: none">
+	
+                    Pour toute assistance supplémentaire, n'hésitez pas à nous contacter Support Technique Internet au 02 47 68 50 11 (Coût d'une communication locale), du lundi au vendredi entre 8h30 et 17h00.
+                
+</div>
+                                
+                <a id="ctl00_ucHeader_ucSessionBar_ucLogin_hypForgotUserId_PleaseCallUs" onclick="loginUc.getForgotUserIdUrl(); return false;">Vous avez oublié votre nom utilisateur?</a>
+                <a id="ctl00_ucHeader_ucSessionBar_ucLogin_hypForgotPassword_PleaseCallUs" onclick="loginUc.getForgotPasswordUrl(); return false;">Vous avez oublié votre mot de passe?</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End LoginUc.ascx -->
+
+                </div>
+            </section>
+        </div>
+        <a id="ctl00_ucHeader_ucSessionBar_hlkRegister" class="online-account small" href="https://www.henryschein.fr/fr-fr/Profiles/SelectCountry.aspx">Créer un compte</a>
+    </div>
+    <!--End Anonymous user-->
+
+
+
+<!--//HeaderSessionBar-->
+
+                </section>
+                <!--end client address - left side-->
+
+                <!--Order info-->
+                <section class="pull-right order-info">
+                    
+    <div class="shopping-cart push-right">
+        <a id="ctl00_ucHeader_ucOrderBar_lnkCurrentCart" href="https://www.henryschein.fr/fr-fr/Shopping/CurrentCart.aspx">
+            <span class="my-order">
+                <span id="ctl00_ucHeader_ucOrderBar_lblMyOrder">mon panier  : </span><span class="total price-mod">0,00 €</span>
+            </span>
+            <span class="cart pad-right">
+                <span class="item-count">
+                    0</span>
+                <i class="fa fa-shopping-cart"></i>
+            </span>            
+        </a>
+    </div>
+
+
+
+                </section>
+                <!--end Order info - right side-->
+
+            </div>
+            <!--end user info-->
+
+        </nav>
+
+        <!--end nav-->
+
+        <script type="text/javascript">
+            //<![CDATA[
+            function redirectToDivisionHomePage() {
+                self.location = "https://www.henryschein.fr/fr-fr/Cabinet/Default.aspx";
+            }
+            //]]>
+        </script>
+    
+                        </div>
+
+                        <!--Page Title-->
+                        
+                        <div>
+<section>
+<div class="page-title centered contract info">
+<img src="/fr-fr/images/Cabinet/pageheader/default.png" alt="Aiguilles anesthésie Intraligamentaires CYBERTECH - 30g S - 0.30x13mm - Boîte de 100" class="header-img"><h1 class="title">Aiguilles anesthésie Intraligamentaires CYBERTECH - 30g S - 0.30x13mm - Boîte de 100</h1>
+<div  class="hs-bubble rounded"><small class="x-small">Anesthésie-Pharmacie / Aiguilles / 900-6527 | CYBERTECH - 4A001882  <span class="preferred-item hidden"><i class="fa fa-check-square-o"></i> Préféré </span></small></div></div>
+</section>
+</div>
+                        <!-- Page Header End -->
+                    </header>
+                    <!--end header-->
+                    <div class="content-dashboard-events container-events">
+                        
+                    </div>
+                    <!--Start Page-->
+                    <main class="container contents hs-results">
+					
+					<div class="border-bottom hs-site-messaging">
+                            <div class="row">
+                                <div data-zone="30" data-column="1" data-classes="rounded no-animate"
+                                    data-dismiss="true" data-type="notification" data-bg-color="#cee0f5">
+                                </div>
+                            </div>
+                        </div>
+						
+                        
+                            <aside id="ctl00_cpAsideMenu_asideSideMenu" class="sub-menu sidebar primary hs-height">
+                                
+<!--Sub-menu-->
+
+<div class="nocrawler">
+    
+<ul>
+<li>
+<h1 class="heading top" id="sidebar-trigger">Commander</h1>
+</li>
+</ul>
+<div id="sidebar-menu" class="hs-slider sub-menu-items">
+<div class="panel left cloned-menu-All" data-prepend="true">
+</div>
+<div class="panel right section-menu hs-accordion ">
+<ul class="content expanded">
+<li class="bg-lite"><div class="hs-form quick-order section-bg">
+    <div class="hs-form-row no-margin">
+        <div class="half pad-right">
+            <label class="x-small" for="ctl00_cpAsideMenu_AsideMenu_SideMenuControl1000txtItemCodeId">Code article</label>
+            <input onclick="this.value = '';" value="" onkeypress="javascript:if (EnterKeyPressed(event)) { var index = $('.quick-add-text').index(document.activeElement) + 1;$('.quick-add-text').eq(index).focus();return false; }" id="ctl00_cpAsideMenu_AsideMenu_SideMenuControl1000txtItemCodeId" name="ctl00_cpAsideMenu_AsideMenu_SideMenuControl1000txtItemCodeId" value="" class="rounded x-small text-itemcode quick-add-text" maxlength="25" type="text" />
+        </div>
+        <div class="quarter">
+            <label class="x-small" for="ctl00_cpAsideMenu_AsideMenu_SideMenuControl1000txtItemQtyId">Qté</label>
+            <input onclick="this.value = '';" value="" onkeypress="javascript:if (EnterKeyPressed(event)) { QuickAddItemHarmony('ctl00_cpAsideMenu_AsideMenu_SideMenuControl1000txtItemCodeId','ctl00_cpAsideMenu_AsideMenu_SideMenuControl1000txtItemQtyId','fr-fr','3','25', 'Vous devez saisir une quantité d\'articles à ajouter à votre commande.', 'Vous devez saisir un code article valide pour ajouter des produits à votre commande.', 'Vous devez saisir un code article valide et une quantité pour ajouter des produits à votre commande.', 'false', this);; return false; }" id="ctl00_cpAsideMenu_AsideMenu_SideMenuControl1000txtItemQtyId" name="ctl00_cpAsideMenu_AsideMenu_SideMenuControl1000txtItemQtyId" value="" class="rounded x-small text-qty quick-add-text" maxlength="5" type="number" min="1" />
+        </div>
+        <div class="quarter pad-left push-right x-small pad-top">
+            <button type="button" id="item-cart" onclick="javascript:QuickAddItemHarmony('ctl00_cpAsideMenu_AsideMenu_SideMenuControl1000txtItemCodeId','ctl00_cpAsideMenu_AsideMenu_SideMenuControl1000txtItemQtyId','fr-fr','3','25', 'Vous devez saisir une quantité d\'articles à ajouter à votre commande.', 'Vous devez saisir un code article valide pour ajouter des produits à votre commande.', 'Vous devez saisir un code article valide et une quantité pour ajouter des produits à votre commande.', 'false', this);" class="hs-btn primary-btn rounded x-small quick-add"><i class="fa fa-cart-plus large"></i></button>
+        </div>
+    </div>
+    <div class="hs-form-row push-right no-margin-bottom"><a class="small margin-top" href="https://www.henryschein.fr/fr-fr/Shopping/QuickOrder.aspx">Saisir plus</a></div>
+</div>
+</li><li  class=" ellipsis"><a  class=" ellipsis" href="/fr-fr/Orders/ItemsFromHistory.aspx">Commander depuis l'historique </a></li>
+<li  class=" ellipsis"><a  class=" ellipsis" href="/fr-fr/shopping/SupplyBrowser.aspx">Parcourir la liste des produits</a></li>
+<li ><a  href="javascript:BrowseWindow('https://www.henryschein.fr/fr-fr/Shopping/SpeedEntry/SpeedEntry.aspx', 1, '_new', '420', '660');">Commande express</a></li>
+<li ><a  href="/fr-fr/Shopping/ShoppingLists.aspx">Mes listes d'achats </a></li>
+<li ><a  href="/fr-fr/Shopping/CurrentCart.aspx?Cart=New">Mon panier </a></li>
+<li ><a  href="/fr-fr/Orders/UnplacedOrders.aspx">Commandes en cours</a></li>
+<li ><a href="/cabinet/flyers/flyers.aspx?sc_lang=fr-fr&hssc=1"   >Flyers et catalogues</a></li><li ><a  href="/cabinet/livraison-et-retours.aspx?sc_lang=fr-fr&hssc=1">Livraison et retours </a></li>
+<li ><a  href="/cabinet/qui-sommes-nous/qui-sommes-nous/questions-frequentes.aspx?sc_lang=fr-fr&hssc=1">Questions Fréquentes</a></li>
+</ul>
+<div data-zone ="37" data-classes="no-animate pad-bottom" data-type="hybrid"></div>
+</div>
+</div>
+
+
+</div>
+<!--end sub-menu-->
+
+                            </aside>
+                        
+
+                        <!--Page Content-->
+                        <div id="ctl00_ctlHTMLArticle" class="page-content hs-height no-arrow">
+                                                        
+                            
+    <div id="MessagePanel" class="pad small"></div>
+    <div id="MessagePanelEmpty"></div>
+
+<div id="MessagePanelAlert" title="Henry Schein"></div>
+
+                            
+                            
+                            <!--//Start of Main Contents--> 
+                            
+    
+    
+    
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <ol style="list-style: none" itemscope itemtype="http://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="first">
+                    <a itemprop="item" href="https://www.henryschein.fr/fr-fr/Cabinet/Default.aspx?did=dental">
+                        <i itemprop="name" content="Cabinet Home" class="fa fa-home"></i>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li class="vr">/</li>
+                
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a href="https://www.henryschein.fr/fr-fr/dental/c/browsesupplies" id="ctl00_cphMainContentHarmony_lnkBrowseSupplies" itemprop="item">
+                        <span itemprop="name">Parcourir la liste des produits</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li class="vr">/</li>
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <div id="divCatName" class="hide">
+                       <a itemprop="item" href="https://www.henryschein.fr/fr-fr/dental/c/anesthesie-pharmacie"><span itemprop="name">Catégorie: Anesthésie-Pharmacie</span></a>
+                    </div>
+                    <meta itemprop="position" content="3" />
+                </li>
+                                    
+                <li class="vr">/</li>
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a href="https://www.henryschein.fr/fr-fr/dental/c/anesthesie-pharmacie/aiguilles" id="ctl00_cphMainContentHarmony_lnkSubcategoryUrl" itemprop="item"><span itemprop="name">Aiguilles</span></a>
+                    <meta itemprop="position" content="4" />
+                </li>
+                
+                <li class="vr">/</li>
+                <li  itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="last">
+                    <span itemprop="name">Aiguilles anesthésie Intraligamentaires CYBERTECH - 30g S - 0.30x13mm - Boîte de 100</span>
+                    <meta itemprop="item" content="https://www.henryschein.fr/fr-fr/dental/p/anesthesie-pharmacie/aiguilles/aiguilles-anesthesie-intraligamentaires-cybertech-30g-s-0-30x13mm-boite-de-100/900-6527" />
+                    <meta itemprop="position" content="5" />
+                </li>
+            </ol>
+        </div>
+    
+
+    
+        <div class="popup-content">
+            <input type="hidden" name="ctl00$cphMainContentHarmony$hiddenSuggestedProducts" id="ctl00_cphMainContentHarmony_hiddenSuggestedProducts" />
+            <!-- product-->
+            <div class="product">
+                <section class="product-desc clear-fix">
+                    <!--Details-->
+                    <div class="details">
+                        
+<!-- Begin ProducyAssetsUc.ascx -->
+
+<div class="product-image">
+    <div class="hs-product-label">
+        <div class="hs-roll-over">
+            
+            <div id="ctl00_cphMainContentHarmony_ucProductAssets_divImgProduct" class="hs-roll-over">
+                <img id="ctl00_cphMainContentHarmony_ucProductAssets_imgProduct" src="/fr-fr/images/shared/imageNotAvailable_1200x1200.png" alt="Aiguilles anesthésie Intraligamentaires CYBERTECH - 30g S - 0.30x13mm - Boîte de 100" style="border-width:0px;" />
+                <input name="ctl00$cphMainContentHarmony$ucProductAssets$hiddenImgProduct" type="hidden" id="ctl00_cphMainContentHarmony_ucProductAssets_hiddenImgProduct" class="hiddenImgProduct" data-img-url="/fr-fr/images/shared/imageNotAvailable_1200x1200.png" data-img-url-error="/fr-fr/images/shared/imageNotAvailable_600x600.png" />
+            </div>
+        </div>
+        
+    </div>
+    <input type="hidden" name="ctl00$cphMainContentHarmony$ucProductAssets$hdSlickConfig" id="ctl00_cphMainContentHarmony_ucProductAssets_hdSlickConfig" value="{&quot;centerPadding&quot;: &quot;@@@%&quot;, 
+            &quot;slidesToShow&quot;: ###, 
+            &quot;slidesToScroll&quot;: 1, 
+            &quot;dots&quot;: false, 
+            &quot;arrows&quot;: false, 
+            &quot;asNavFor&quot;: &quot;.slider-target&quot;, 
+            &quot;focusOnSelect&quot;: true, 
+            &quot;centerMode&quot;: true}" />
+
+    
+
+    <ul class="small-above">
+        <li>
+            <div class="field">Catégorie: </div>
+            <div class="value">
+                <span>Anesthésie-Pharmacie</span>
+                /
+                    <span>Aiguilles</span>
+            </div>
+        </li>
+        
+        <li>
+            
+        </li>
+        
+        
+
+<!-- Begin ProductExternalReferenceUc.ascx -->
+        
+<!-- End ProductExternalReferenceUc.ascx -->
+
+        <li>
+            <a class="hs-btn xx-small rounded see-product-attributes hidden">ATTRIBUTS SUPPLÉMENTAIRES</a>
+        </li>
+    </ul>
+</div>
+
+<!-- End ProductAssetsUc.ascx -->
+
+<script>
+
+    $(document).on("onClearControlInProductDimensionFilter", function (evt) {
+
+        $("#product-10").next().remove();
+        $("#product-10").data("uom", "");
+
+    });
+
+</script>
+
+<ul id="ctl00_cphMainContentHarmony_ucProductSummary_ulProductSummary" class="product-summary" data-product-summary="900-6527">
+    <li>
+        <h2 class="product-title medium strong">
+            Aiguilles anesthésie Intraligamentaires CYBERTECH - 30g S - 0.30x13mm - Boîte de 100
+            <small class="x-small"><strong>
+                900-6527</strong>
+                |
+                CYBERTECH
+                -
+                4A001882
+                                
+                
+
+                <span class="preferred-item">
+                    
+                </span>
+            </small>
+        </h2>
+    </li>
+    <li class="customer-notes">
+        <div class="field">Description: </div>
+        <div class="value">
+            Aiguilles &agrave;&nbsp; anesth&eacute;sie intraligamentaires
+        </div>
+    </li>
+     
+    <li class="small-below">
+        <div class="field">Categorie: </div>
+        <div class="value">
+            <a href="#">
+                Anesthésie-Pharmacie</a> / <a href="#">
+                    Aiguilles</a>
+        </div>
+    </li>
+    <li class="small-below">
+        
+    </li>
+    
+    <li>
+        
+
+
+<ul class="product-dimension" data-dimension-parent-itemcode="900-6527" data-parent-itemcode="900-6527" data-show-productcompare="False">
+    <!--HTML to be appended here-->
+    
+</ul>
+
+<script>
+
+     $(document).ready(function () {
+
+        if ('True') {
+            //Builds the UI
+            buildUI('900-6527', '');
+
+            //Selects the provided item code in the dropdowns
+            selectProductDimension('900-6527', '900-6527');
+        }
+
+    });
+</script>
+
+
+    </li>
+    
+
+<!-- Begin ProductExternalReferenceUc.ascx -->
+        
+<!-- End ProductExternalReferenceUc.ascx -->
+
+   
+     
+
+    <!-- Packaging Options-->
+    
+    <li>
+        <div class="field packaging-opts hide">
+            Options d'emballage (<span class="color-primary x-bold">1</span>)            
+        </div>
+
+        <!--Product-->
+        
+
+                <div class="value clear-fix ">
+                    
+                    
+
+                    <ul class="product-actions">
+                        
+                        <li id="ctl00_cphMainContentHarmony_ucProductSummary_ucPackagingOptions_rptProductList_ctl00_liProductAction">
+                            <div class="hs-addToCart x-small hs-form" data-product-container="900-6527UN">
+                                
+
+<!-- Being ProductActionsUc.ascx -->
+
+
+
+<!--Product Price | Login-->
+
+<div class="product-price">
+    
+    <span class="amount x-small">16,99 €<BR><span><span class="medium custom-style-quantity" >x5</span> <span class="x-large color-quaternary custom-style-price" >15,99 €</span></span><BR></span>        
+    <span class="price-type"></span>
+    
+      
+</div>
+
+
+<!--UOM-->
+<div class="uom-opts color-label-gray uppercase uom-missing-detail"
+    >
+    <span class="large block">UN</span>
+    <span class="xx-small strong">
+        
+    </span>
+</div>
+<!--END OF UOM-->
+
+
+<!--Product UOM-->
+<div class="hs-qty">
+    <input name="ctl00$cphMainContentHarmony$ucProductSummary$ucPackagingOptions$rptProductList$ctl00$ucProductAction$txtQTY" maxlength="5" id="ctl00_cphMainContentHarmony_ucProductSummary_ucPackagingOptions_rptProductList_ctl00_ucProductAction_txtQTY" tabindex="1" class="rounded txtValue" data-checkproductidforpromocode="False" data-uom="UN" data-checkexternalmapping="False" autocomplete="off" min="1" data-promocode="7" data-batch-add="False" data-category="GENCABI_Anesthésie-Pharmacie_Aiguilles" type="number" data-sync-value="900-6527" data-itemcode="900-6527" data-name="Aiguilles anesthésie Intraligamentaires CYBERTECH - 30g S - 0.30x13mm - Boîte de 100" data-reloadPageAfterAddingToCart="False" onkeypress="if ((event.which &amp;&amp; event.which == 13) || (event.keyCode &amp;&amp; event.keyCode == 13)) { document.getElementById(&#39;ctl00_cphMainContentHarmony_ucProductSummary_ucPackagingOptions_rptProductList_ctl00_ucProductAction_hylButton2&#39;).click();return false;} else return true; " data-manufacturer="CYBERTECH" data-displayed-uom="UN" max="99999" data-parent-container />
+    <!--Customize-->
+    
+    <!--end Customize-->
+</div>
+<!--end hs qty-->
+
+<!--QTY: Arrows-->
+<div id="ctl00_cphMainContentHarmony_ucProductSummary_ucPackagingOptions_rptProductList_ctl00_ucProductAction_divQtyArrows" class="hs-dial" data-update="900-6527">        
+        <a class="qty-down hs-btn rounded" data-action="down"><i class="fa fa-arrow-down"></i></a>
+        <a class="qty-up hs-btn rounded" data-action="up"><i class="fa fa-arrow-up"></i></a>
+    </div>
+
+
+
+
+    <!--Add to cart button with Icon-->
+    
+
+    <!--Add to cart button with Text Only -->
+    <a id="ctl00_cphMainContentHarmony_ucProductSummary_ucPackagingOptions_rptProductList_ctl00_ucProductAction_hylButton2" class="hs-btn addBtn primary-btn rounded" data-icon-only="true" data-itemcode="900-6527" data-item-uom="900-6527UN">
+                        
+            <span class="addToCart-label">
+                <i class="fa fa-cart-plus"></i>
+            </span>
+            <i></i>
+        </a>
+
+        <div class="next-actions">
+            <a class="close-popup x-small uppercase"><i class="fa fa-chevron-left"></i> Retour au catalogue</a>
+            <br>
+            <a class="x-small uppercase" href="https://www.henryschein.fr/fr-fr/Shopping/CurrentCart.aspx"><i class="fa fa-shopping-cart"></i> Aller au panier</a>
+        </div>
+
+    
+
+    <!--Add to cart button with Text Only using full width-->
+     
+
+    <!--Add To Cart button /w Menu-->
+    
+
+<!-- End ProductActionsUc.ascx -->
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!--End Product-->
+            
+
+		<div class="pull-right last-purchased clear-fix">
+            
+        </div>
+    </li>
+
+
+    <!-- End Packaging Options-->    
+
+     
+    
+   
+    <li>
+        
+    </li>
+
+    <li>
+        <div class="extra-savings">
+            
+        </div>
+    </li>
+    <li class="product-notes clear-fix">
+        
+            <aside class="value hs-tooltip item-messages">
+                
+
+
+
+
+
+
+
+
+
+
+    <!-- ICON MESSAGES -->
+    
+            <div id="ctl00_cphMainContentHarmony_ucProductSummary_ucMediaProductIcons_rptIconMessageForListView_ctl00_divTipParent" class="tip show">
+                <a id="ctl00_cphMainContentHarmony_ucProductSummary_ucMediaProductIcons_rptIconMessageForListView_ctl00_linkIcon" title="Dispositif Medical Classe IIA" alt="Dispositif Medical Classe IIA" onclick="javascript:alert(&#39; Dispositif Medical Classe IIA&#39;);">
+                    
+                    <img src="/images/icons/ico_DM.png" id="ctl00_cphMainContentHarmony_ucProductSummary_ucMediaProductIcons_rptIconMessageForListView_ctl00_imgIcon" alt="Dispositif Medical Classe IIA" />
+                </a>
+                <p>
+                <span id="ctl00_cphMainContentHarmony_ucProductSummary_ucMediaProductIcons_rptIconMessageForListView_ctl00_lblIcon">Dispositif Medical Classe IIA</span>
+                
+                </p>
+            </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </aside>
+        
+    </li>
+    <li>
+        <input type="hidden" name="ctl00$cphMainContentHarmony$ucProductSummary$customFields$hiddenItemCode" id="ctl00_cphMainContentHarmony_ucProductSummary_customFields_hiddenItemCode" value="900-6527" />
+<div class="hs-form no-pad hs-product-list">
+    <div class="custom-fields x-small">
+        
+
+        <div id="saveButtonDiv" style="display: none;">
+            <button id="SaveCustomeField" data-show-loader-shop="<i class='fa fa-spin fa-refresh'></i>"
+                class="hs-btn secondary-btn xx-small rounded save-custom-field">
+                Enregistrer les nouvelles valeurs par défaut
+            </button>
+            
+        </div>
+
+        <script>
+            function ShowSaveButton() {
+                var saveButtonDivElem = document.getElementById("saveButtonDiv");
+                saveButtonDivElem.style.display = "inline";
+            }
+        </script>
+    </div>
+</div>
+
+    </li>
+</ul>
+
+<input name="ctl00$cphMainContentHarmony$hidRelatedProductOptions" type="hidden" id="ctl00_cphMainContentHarmony_hidRelatedProductOptions" class="hidRelatedProductOptions" data-itemcode="900-6527" data-show-expanded="True" />
+                    </div>
+                    <!--end details-->
+                </section>
+            </div>
+            
+            <!-- end product-->
+            <div class="product no-padding product-additional-info">
+
+				<!-- Product overview -->
+				
+
+				<!-- End Product overview -->
+
+                <!-- Product attributes -->
+                
+
+                <!-- End Product attributes -->
+
+                <!-- Viva Learning-->
+                <section id="viva-anchor" class="viva-learning hs-accordion clear-fix" style="display: none;">
+                    <h2 class="heading  show-progress">
+                        <i class="fa fa-info-circle laptop-above"></i>Informations supplémentaires sur le produit
+                <span class="desc">Ce produit dispose d'informations supplémentaires fournies par Viva Learning</span>
+                    </h2>
+                    <div class="content">
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                if (typeof _isVivaLearningEnabled != "undefined" && _isVivaLearningEnabled == "True") {
+                                    viewVivaLearningDetails();
+                                }
+                            });
+                        </script>
+                    </div>
+                </section>
+                <!-- End Viva Learning-->
+
+                <!-- Product Substitutes-->
+                
+                <!-- End Product Substitutes-->
+
+                <!-- Product variants-->
+                
+
+                <!-- End Product Variants-->
+
+                <!-- Product review-->
+                
+                <!-- End Product Review-->
+
+                <!-- Purchase History-->
+                
+
+                <!-- End Purchase History-->
+
+                <!-- Product Administration-->
+                
+
+                <!-- End Administration-->
+
+                <!-- Product Rail Top Sellers, Recently Viewed -->
+                <div id="product_detail-alltab-rich-relevance" class="product-rail-container-product-detail border-bottom" data-product-id="900-6527" data-show-productcompare="False" >
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+	                		if (typeof richRelevanceApiReady != 'undefined' && !richRelevanceApiReady) {
+	                			// Waiting for Rich Relevance API
+	                			waitFor(function () {
+	                				return richRelevanceApiReady;
+	                			}, function () {
+	                			    if (richRelevancePlacementsData == null || typeof richRelevancePlacementsData == 'undefined') {
+	                			        loadAjaxRail('productdetail', '.product-rail-container-product-detail');
+	                			    }
+		                        });
+                    		} else {
+								// there is no Rich Relevance data, so call other tabs
+                    			loadAjaxRail('productdetail', '.product-rail-container-product-detail');
+                    		}
+                        });
+                    </script>
+                </div>
+                <!-- -->
+
+            </div>
+        </div>
+
+        <!-- Related Product -->
+        
+        <!-- End Related Product -->
+    
+
+    <!-- Begin Teeth UI -->
+    
+    <!-- End Teeth UI -->
+
+    
+
+<!-- Begin Microdata.ascx -->
+
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "Product",
+"name": "Aiguilles anesthésie Intraligamentaires CYBERTECH - 30g S - 0.30x13mm - Boîte de 100",
+"description": "Aiguilles \u0026agrave;\u0026nbsp; anesth\u0026eacute;sie intraligamentaires",
+"sku": "900-6527",
+"image": "https://www.henryschein.fr/fr-fr/images/shared/imageNotAvailable_600x600.png",
+"brand": {
+"@type": "Organization",
+"name": "CYBERTECH"
+},
+"url": "https://www.henryschein.fr/fr-fr/dental/p/anesthesie-pharmacie/aiguilles/aiguilles-anesthesie-intraligamentaires-cybertech-30g-s-0-30x13mm-boite-de-100/900-6527?promocode=7&FullPageMode=true",
+"offers": {
+"@type": "Offer",
+"priceCurrency": "EUR",
+"price": "16.99"
+},
+"mpn": "4A001882"
+}
+</script>
+
+
+<!-- End Microdata.ascx -->
+    
+     <script type="text/javascript">
+        $(document).ready(function () {
+            // Task: 20393 : Remove Catogory title in breadcrumb           
+            hideCategoryTitleInBreadcrumb('Catégorie');
+        });
+    </script>
+
+                            <div class="red-left-nav-content">
+                                <!-- Begin RefLeftNav ContentPlaceHolders -->
+                                
+                                <!-- End RefLeftNav ContentPlaceHolders -->
+                            </div>
+                            
+                            <!--//END of Main Contents-->
+                        </div>
+                        <!--end page Content-->
+                        <!--Left ads-->
+                        <aside class="medium-below border-top">
+                            <div data-zone="37" data-classes="no-border" data-type="rail" data-slick-opts='{"slidesToShow":4,"slidesToScroll":4,"dots": true,"arrows": true,"responsive":[{"breakpoint":1440,"settings":{"slidesToShow":4,"slidesToScroll":4}},{"breakpoint":1280,"settings":{"slidesToShow":3,"slidesToScroll":3}},{"breakpoint":960,"settings":{"slidesToShow":2,"slidesToScroll":2}},{"breakpoint": 640,"settings":{"slidesToShow":1,"slidesToScroll":1}}]}'></div>
+                        </aside>
+                        <!--end Left ads-->
+                        <!--ads-->
+                        
+<aside class="featured-offers sidebar secondary hs-height">
+    
+ 
+    
+    <h1 class="sidebar-title">
+        À la Une        
+    </h1>
+    <div class="sidebar-content">
+        <div class="laptop-below">
+            <div data-zone="38" data-type="rail" data-slick-opts='{"slidesToShow":4,"slidesToScroll":4,"dots": true,"arrows": true,"responsive":[{"breakpoint":1440,"settings":{"slidesToShow":4,"slidesToScroll":4}},{"breakpoint":1280,"settings":{"slidesToShow":3,"slidesToScroll":3}},{"breakpoint":960,"settings":{"slidesToShow":2,"slidesToScroll":2}},{"breakpoint": 640,"settings":{"slidesToShow":1,"slidesToScroll":1}}]}'></div>
+        </div>
+        <div class="laptop-above">
+            <div data-zone="38" data-type="hybrid"></div>
+        </div>
+    </div>
+    <!--Link to featured offer page-->
+    <div class="pad border-bottom border-top centered more-link hide">
+        <a href="">Toutes nos offres?</a>
+    </div>
+    <!--End show all link-->
+</aside>
+
+                        <!--end ads-->
+                        <!--product rail -->
+                        
+                        <!--end product rail-->
+                    </main>
+                    <!--end main container-->
+
+                    <!-- Footer Begin -->
+                    
+    <footer class="site-footer">
+
+        <!-- Footer content container-->
+        <div class="container">
+
+            <!-- iPad/Mobile View -->
+            <!-- client summary-->
+            <div class="user-info clear-fix">
+
+                <ul class="user-action">
+
+                    <!-- Welcome-->
+                    
+
+
+                    <!-- Client address-->
+                    
+
+                    <!-- Order info-->
+                    <li>
+                        
+
+    <i class="fa fa-shopping-cart item-icon"></i>
+    <a id="ctl00_ucFooter_OrderBarUc_lnkCurrentCart1" class="info" href="https://www.henryschein.fr/fr-fr/Shopping/CurrentCart.aspx"><span id="ctl00_ucFooter_OrderBarUc_lblMyOrder1">mon panier  : </span>
+        <strong>
+            0</strong>  Articles,
+   <strong class="total price-mod">
+       0,00 €</strong>
+    </a>
+
+                    </li>
+
+                    <!-- My account -->
+                    <li>
+                        <i class="fa fa-user item-icon"></i>
+                        <span class="info">
+                            <a class="info" href="https://www.henryschein.fr/fr-fr/profiles/MyAccount.aspx">Mon Compte</a>
+                            <a id="ctl00_ucFooter_hylLogIn" class="hs-btn primary-btn xx-small rounded" href="https://www.henryschein.fr/fr-fr/Profiles/Login.aspx">Se connecter</a>
+                        </span>
+                    </li>
+
+                     <!-- Homepage -->
+                    <li>
+                        <i class="fa fa-home item-icon"></i>
+                        <a class="info" href="https://www.henryschein.fr/fr-fr/Cabinet/Default.aspx?did=dental&stay=1">Accueil</a>
+                    </li> 
+
+                    <!-- Language selector-->
+                    <li style="display: none">
+                        <i class="fa fa-language item-icon"></i>
+                        <span class="info">
+                            
+<!-- Begin LanguageSelectoryUc.ascx -->
+
+
+
+
+<div id="ctl00_ucFooter_ucLanguageSelector_pnlStandard">
+	
+    
+            <span class="info">
+                
+            </span>
+            
+</div>
+<!-- End LanguageSelectoryUc.ascx -->
+
+                        </span>
+                    </li>                   
+
+                    <!-- Add class="extend" to Contact section <li> When help section is displayed, to maintain the footer html structure -->
+                    <!-- help-->
+                    <li style="display: none">
+                        <i class="fa fa-life-bouy item-icon"></i>
+                        <span class="info">
+                            <a id="ctl00_ucFooter_hlkHelp" onclick="javascript:cmCreatePageviewTag(&#39;Help Link_FR_FR&#39;, &#39;Help&#39;, null, null);" href="javascript:BrowseWindow(&#39;https://www.henryschein.fr/fr-fr/help/main.htm?did=dental&#39;, 1, &#39;Help&#39;, &#39;600&#39;, &#39;800&#39;);">Aide</a>
+                        </span>
+                    </li>
+
+                    <!-- Sitemap-->
+                    <li>
+                        <i class="fa fa-sitemap item-icon"></i>
+                        <a id="ctl00_ucFooter_hlkDivSitmap3" class="info" Href="https://www.henryschein.fr/fr-fr/Cabinet/SiteMap.aspx">Plan du site</a>
+                    </li>
+
+                    <!-- Global Site-->
+                    <li>
+                        <i class="fa fa-globe item-icon"></i>
+                        <a class="info" href="https://www.henryschein.fr/fr-fr/Global.aspx">Page de démarrage</a>
+                    </li>
+
+                     <!-- About Henry Schein-->
+                     <li>
+                        <i class="fa fa-building item-icon"></i>
+                        <a id="ctl00_ucFooter_lnkAbout2" class="info" href="../../../../../../redirect.aspx?signOff=true&amp;RedirectToThompsonSite=true">A propos de Henry Schein</a>
+                    </li>
+
+                    <!-- Legal Terms and Conditions-->
+                    <li>
+                        <i class="fa fa-legal item-icon"></i>
+                        <a id="ctl00_ucFooter_lnkTerms" class="info" Href="https://www.henryschein.fr/fr-fr/Cabinet/LegalTerms.aspx">Conditions générales de vente</a>
+                    </li>
+
+                    <!-- Privacy statement-->
+                    <li>
+                        <i class="fa fa-eye item-icon"></i>
+                        <a class="info" href="https://www.henryschein.fr/fr-fr/Privacy.aspx">Vos informations personnelles</a>
+                    </li>
+
+                     <!-- Contact-->
+                    <li class="extend">
+                        <i class="fa fa-phone item-icon"></i>
+                        <span class="info">
+                            <span class='open-hours'><strong class='x-small'>Cabinet dentaire :</strong> 02 47 68 90 00* lundi-jeudi 8h30-18h30 / vendredi 8h30-18h00</span> <span class='open-hours'><strong class='x-small'>Implantologie : </strong> 02 47 68 95 00* lundi-vendredi 9h00-17h30</span>  <span class='open-hours'> <strong class='x-small'>Support web : </strong>02 47 68 50 11* lundi-vendredi 9h00-17h00</span><span class='xx-small'>*coût d'une communication locale</span>
+                        </span>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!--end client summary-->
+
+
+            <!--Social Media-->
+            
+<section class="quarter social-media">
+    <ul class="social-icons inline push-right">
+		<li><a href="https://www.facebook.com/HenryScheinFrance" target="_blank"><i class="fa fa-facebook-square"></i></a></li>        
+        <li><a href="https://fr.linkedin.com/company/henry-schein-france" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+		<li><a href="http://youtube.com/henryscheinfrance" target="_blank"><i class="fa fa-youtube-square"></i></a></li>                
+    </ul>
+</section>
+
+
+            <!--end social media-->
+
+
+            <!-- Desktop View -->
+            <!--Links-->
+            <section class="half footer-info centered medium-above small">
+                <ul class="links inline">
+
+                    <li>
+                        <a id="ctl00_ucFooter_lnkAbout1" class="info" href="../../../../../../redirect.aspx?signOff=true&amp;RedirectToThompsonSite=true">A propos de Henry Schein</a></li>
+                    <li class="repeated-link">                        
+                        <a id="ctl00_ucFooter_lnkGlobal2" href="/fr-fr/Global.aspx">Page de démarrage</a>
+                    </li>
+                    <li><a href="https://www.henryschein.fr/fr-fr/Cabinet/Default.aspx?did=dental&stay=1">Accueil</a></li>
+
+
+                    <li>
+                        <a id="ctl00_ucFooter_hlkDivSitmap2" Href="https://www.henryschein.fr/fr-fr/Cabinet/SiteMap.aspx">Plan du site</a>
+                    </li>
+                    <li><a href="https://www.henryschein.fr/fr-fr/Privacy.aspx">Vos informations personnelles</a></li>
+                    <li><a href="https://www.henryschein.fr/fr-fr/Cabinet/LegalTerms.aspx">Conditions générales de vente</a></li>
+                    <li class="medium-below">
+                        <a id="ctl00_ucFooter_lnkSwitchDesktopView" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ucFooter$lnkSwitchDesktopView&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Afficher le site principal</a>
+                    </li>
+                    
+                </ul>
+                <div class="hs-form extra-links" style="display:none;">
+                    <div class="hs-form-row no-margin-bottom">
+                        <div class="hs-select-opt x-small">
+                            
+                        </div>
+                    </div>
+                </div>
+                 <div id="ctl00_ucFooter_pnlAssistance">
+	
+                    <div id="ctl00_ucFooter_pnlCustomerService" class="small info">
+		
+                       <span class="block">
+                             <span class='open-hours'><strong  class='x-small'>Cabinet dentaire :</strong> 02 47 68 90 00* lundi-jeudi 8h30-18h30 / vendredi 8h30-18h00</span> <span class='open-hours'><strong class='x-small'>Implantologie : </strong> 02 47 68 95 00* lundi-vendredi 9h00-17h30</span>  <span class='open-hours'> <strong class='x-small'>Support web : </strong>02 47 68 50 11* lundi-vendredi 9h00-17h00</span><span class='xx-small'>*coût d'une communication locale</span>
+                       </span>
+                    
+	</div>
+                
+</div>
+                <div class="copyright">
+                    <span>Copyright &reg; 2021 Henry Schein France. Tous droits réservés.</span>
+                </div>
+            </section>
+            <!--end links-->
+
+            <!--SSL Logo-->
+            <section id="ctl00_ucFooter_sslLogo1" class="quarter ssl-logo pad-left">
+               
+				
+                <a class="pull-right push-right back-to-top smooth-scroll" href="#top">Haut de la page<span><i class="fa fa-long-arrow-up"></i></span></a>
+            </section>
+            <!--end SSL logo-->
+
+        </div>
+        <!-- end container-->
+
+    </footer>
+
+
+
+
+
+                    <!--Footer End-->
+
+                </section>
+                <!--end main body-->
+
+            </div>
+            <!--end slider-->
+
+        </div>
+        <!--end limit-->
+
+        <!--Begin CartActionsBar -->
+        
+
+<!-- Begin CartActionBarUc.ascx -->
+
+<section class="hs-cart-actions-bar clear-fix display">
+    
+    <div class="primary-panel container">
+
+        <div class="promotions pull-left">            
+
+            <!-- PRODUCT COMPARE | Show compare bar -->
+            <div class="pull-left show-compare-bar hidden margin-right">
+                Comparaison de produits <span class="hs-badge counter">0</span>
+                <a href="#" class="x-small goto-compare-bar">
+                    <i class="fa fa-adjust"></i> Barre - Afficher la comparaison
+                </a>                
+            </div>
+            <p class="message bold pad-top"></p>
+
+        </div>
+
+        <div class="cart-actions pull-right">
+            <!-- Close -->
+            <a class="close-cart-bar pull-right hs-btn rounded x-small"><i class="fa fa-close"></i></a>
+
+            <!-- Express Checkout -->
+            <a id="ctl00_CartActionBarUc_lbkExpressCheckout" class="express-checkout x-small pull-right hidden"></a>
+
+            <!-- Checkout -->
+            <a id="ctl00_CartActionBarUc_lnkCheckout" class="checkout-go pull-right hs-btn primary-btn rounded x-small last hidden" data-dialog="open" data-url="#ctlLogin" data-original-position="[data-login-role=&quot;menu-account&quot;]" data-header-text="&lt;i class=&#39;fa fa-sign-in&#39;>&lt;/i> Se connecter" data-classes="slim theme-lite" onclick="Cookies.set(&quot;checkoutClicked&quot;,&quot;1&quot;, { secure: true });return false;">Paiement</a>
+
+            <!-- Continue Shopping -->
+            <a id="ctl00_CartActionBarUc_lnkContinueShopping" class="continue-shopping pull-right hs-btn secondary-btn x-small small-below">Continuer vos achats</a>
+
+            <!-- PLACE ORDER -->
+            <a id="ctl00_CartActionBarUc_lnkPlaceOrder" class="place-order pull-right hs-btn rounded primary-btn x-small hidden">PASSER COMMANDE</a>
+
+            <!-- Review Order -->
+            <a id="ctl00_CartActionBarUc_lnkReviewOrder" class="review-order pull-right hs-btn rounded x-small hidden" href="https://www.henryschein.fr/fr-fr/Shopping/CurrentCart.aspx">Vérifier la commande</a>
+
+            <!-- CONTINUE TO REVIEW ORDER -->   
+            <a id="ctl00_CartActionBarUc_lnkContinueToReviewOrder" class="continue-order pull-right hs-btn rounded primary-btn x-small hidden">CONTINUER POUR VÉRIFIER LA COMMANDE</a>
+
+            <!-- Add to cart -->
+            <a id="ctl00_CartActionBarUc_hylAddTocart" class="hs-addToCart add-to-cart pull-right hs-btn primary-btn rounded x-small">Ajouter au panier</a>
+
+                        
+        </div>
+
+    </div>
+
+    <!-- Product detail page only special view -->
+    <div class="secondary-panel container hidden">
+
+        <div class="promotions">
+            <div class="title">
+
+                <!-- PRODUCT COMPARE | Show compare bar -->
+                <div class="pull-left show-compare-bar hidden margin-right">
+                    Comparaison de produits <span class="hs-badge counter">0</span>
+                    <a href="#" class="x-small goto-compare-bar">
+                        <i class="fa fa-adjust"></i> Barre - Afficher la comparaison
+                    </a>
+                </div>
+
+                <img class="medium-above rounded" src="" alt="">
+                <h2 class="product-title medium strong small-above ellipsis-phablet">[Title]<br>
+                    <small class="small"><strong>[Code article]</strong> | [Marque ? Code du marque]</small>
+                </h2>
+            </div>
+        </div>
+
+        <div id="ctl00_CartActionBarUc_divCartActions" class="cart-actions">
+
+            <!-- Close -->
+            <a class="close-cart-bar pull-right hs-btn rounded x-small"><i class="fa fa-close"></i></a>
+
+            <!-- Add to cart -->
+            <span class="hs-addToCart hs-form pull-right rounded x-small no-price no-margin"></span>
+
+            <div id="ph" class="medium-above"></div>
+        </div>
+
+    </div>
+
+    <div class="tertiary-panel container hidden">        
+        
+        <div class="warnings pull-left small">
+            
+            <!--Warnings-->
+            <div class="hs-messaging margin-right warning-message hide">
+                <ul>
+                    <li class="warn">
+                        <div class="message color-warn small">
+                            <i class="fa fa-exclamation-circle"></i>
+                            Vous ne pouvez comparer que cinq (5) produits à la fois.
+                        </div>
+                    </li>    
+                </ul>
+            </div>
+
+            <!--Products from the same category-->
+            
+
+            <!--Max products-->
+            <div class="vAlign-middle phablet-above product-count">
+                Vous avez sélectionné 
+                <strong class="bold">
+                    <span class="counter">0</span> produits sur 5 produits
+                </strong> à comparer.
+                
+                <!--link to back-->
+                <a href="#" class="x-small goto-cart-bar">
+                    <i class="fa fa-chevron-left"></i> Barre - Retour au panier
+                </a>
+            </div>
+
+            <div class="vAlign-middle phablet-below product-count">
+                
+                <a href="#" class="plus-toggle color-dark mobile-action-bar-toggle">
+                    <i class="fa fa-plus color-primary"></i> Comparaison de produits
+                </a>
+                <div class="margin-left x-small">
+                    <strong class="bold">
+						Vous avez sélectionné <span class="counter">0</span> produits sur 5 produits à comparer.
+                    </strong>
+                </div>
+
+                <!--link to back-->
+                <a href="#" class="x-small goto-cart-bar">
+                    <i class="fa fa-chevron-left"></i> Barre - Retour au panier
+                </a>
+                
+            </div>            
+
+        </div>
+       
+        <!--thumbs products-->
+        <div class="thumb-list pull-left phablet-above">
+            <!--products to compare-->
+            <ul>
+                <li class="rounded product-thumb"></li>
+                <li class="rounded product-thumb"></li>
+                <li class="rounded product-thumb"></li>
+                <li class="rounded product-thumb"></li>
+                <li class="rounded product-thumb"></li>
+            </ul>
+        </div>
+        
+        <div class="cart-actions pull-right">
+
+            <!--<div class="push-right">                
+                <a href="#" class="hs-btn primary-btn rounded x-small last bold no-margin-top">keep <span class="text-above">Comparison</span></a>
+
+                <a href="#" class="hs-btn rounded x-small bold no-margin-right">Start New</a>
+            </div>-->
+            
+            <div class="push-right hs-popup-opener">
+
+                <!-- View Compare -->
+                <a id="ctl00_CartActionBarUc_hlViewCompare" class="hs-btn primary-btn rounded small last bold no-margin-top compare-button" title="" data-url="" data-content-target=".popup" href="">
+                    Voir la comparaison
+                </a>
+
+                <!-- Clear All -->
+                <a id="ctl00_CartActionBarUc_hlClearAll" class="clear-cart-bar small pad-left pad-right compare-clear">
+                    Effacer tout
+                </a>
+            </div>
+            
+            <!--<div class="push-right">
+                
+                <a id="ctl00_CartActionBarUc_HyperLink3" class="save-shopping-list hs-btn rounded x-small bold">Save <span class="text-above">to shopping list</span></a>                
+                <a id="ctl00_CartActionBarUc_HyperLink2" class="hs-addToCart add-to-cart hs-btn primary-btn rounded x-small">Add <span class="text-above">to Cart</span></a>                
+                <a class="close-cart-bar hs-btn rounded x-small"><i class="fa fa-close"></i></a>
+                
+            </div>-->
+
+        </div>
+
+        <!-- MOBILE view selected product compare -->
+        <div class="view-selected-only-mobile phablet-below hidden">
+            
+            <div class="scroll-area">
+
+                <h1>
+                    <div class="vAlign-middle product-count">
+                    
+                        <a href="#" class="plus-toggle color-dark mobile-action-bar-toggle">
+                            <i class="fa fa-minus color-primary"></i>
+                            <div class="large inline-block">Comparaison de produits</div>
+                        </a>
+
+                        <div class="x-small counter-label">
+                            <strong class="bold small">
+                                Vous avez sélectionné <span class="counter">0</span> produits sur 5 produits à comparer.
+                            </strong>
+                        </div>
+                    </div>
+                </h1>
+
+                <div class="thumb-list-vertical">
+                    <ul>
+                        <li class="rounded product-thumb"></li>
+                        <li class="rounded product-thumb"></li>
+                        <li class="rounded product-thumb"></li>
+                        <li class="rounded product-thumb"></li>
+                        <li class="rounded product-thumb"></li>
+                    </ul>
+                </div>
+
+                <!-- Clear All -->
+                <a href="#" class="pull-right color-primary compare-clear">
+                    <i class="fa fa-times"></i>
+                    <div class="inline-block">Effacer tout</div>
+                </a>
+
+            </div>
+
+            <!-- Btn view compare -->
+            <div class="bar-compare-button block padding hs-popup-opener">
+                <a id="ctl00_CartActionBarUc_hlViewCompareMobile" class="hs-btn block centered primary-btn rounded small last bold no-margin-top compare-button" title="" data-url="" data-content-target=".popup" href="">
+                    Voir la comparaison
+                </a>
+            </div>
+
+        </div>
+
+        <!-- others -->
+        
+    </div>
+
+</section>
+
+<!-- End CartActionBarUc.ascx -->
+        <!-- end CartActionsBar -->
+
+        <!--Begin Popup-->
+        
+
+<!-- Begin PopupActionuc.ascx -->
+
+
+
+<section class="hs-popup simple">
+
+    <!-- Header-->
+    <header class="popup-header">
+
+        <div class="popup-branding">
+            <a class="medium-above" href="https://www.henryschein.fr/fr-fr/Cabinet/Default.aspx?did=dental&stay=1">
+                <img src="/fr-fr/images/logos/logo.dental.svg" alt="Henry Schein"></a>
+            <a class="medium-below" href="https://www.henryschein.fr/fr-fr/Cabinet/Default.aspx?did=dental&stay=1">
+                <img src="/App_Themes/Harmony/images/hs-small-logo.png" alt="Henry Schein"></a>
+        </div>
+
+        <!--Print and Close Actions-->
+        <ul class="popup-actions" style="list-style: none">
+            <!-- share currently not in use. may be to use in future-->
+            <!-- <li class="small-above"><a href="#" class="action"><i class="fa fa-share-alt"></i></a></li>-->
+            <li class="hs-popup-default-button small-above"><a class="action"><i class="fa fa-print"></i> <span class="x-small">Imprimer</span></a></li>
+            <li class="hs-popup-default-button"><a class="action" data-action="popup-close"><i class="fa fa-close"></i> <span class="x-small">Fermer</span></a></li>
+        </ul>
+        <!--End Print and Close Actions-->
+
+        <!-- Any other custom button that needs to be added by JavaScript in the above popup-actions -->
+        <ul class="popup-actions-container hide">
+            <li class="small-above popup-product-compare-remove-all"><a class="action"><i class=" fa fa-trash"></i> <span class="x-small">Tout supprimer</span></a></li>
+        </ul>
+         <!-- Any other custom button that needs to be added by JavaScript in the above popup-actions -->
+    </header>
+    <!-- End Header-->
+
+    <div class="container popup theme-popup">
+    </div>
+
+</section>
+
+<!-- End PopupActionuc.ascx -->
+
+        <!--End Popup-->
+
+        <!--Dialog-->
+        <section class="hs-dialog drop-shadow"></section>
+        <div id="Substitute-Items" class="hidden">
+            
+        </div>
+        
+
+        <!-- Custom JS that needs to be at the bottom of the page -->
+        
+
+
+
+
+     <script type="text/javascript" src="/script/pagebottom.min.js?t=210426033621"></script>
+
+
+
+
+
+<!-- Begin Medallia Script-->
+<script type="text/javascript" >
+     var medalliaDivision='dental';
+     var medalliaUserId='';
+     var medalliaSalesRepId='';
+     var medalliaUserEmail='';
+     var medalliaUserFullName='';
+     var medalliaSalesDivision='';
+     var medalliaUserPhone='';
+     var medalliaBillToAndShipTo=',';
+     var medalliaSessionId='jhhbtliipb3cq2j1fr41ihbf';
+     var medalliaLoggedInStatus='No';
+     var medalliaSearchTerm='';
+     var medalliaShipToAddress1='';
+     var medalliaShipToAddress2='';
+     var medalliaShipToState='';
+     var medalliaShipToZip='';
+     var medalliaShipToSalesPlan='';
+     var medalliaLast12MonthsSales='';
+     var medalliaLast12MonthsSalesInUSD='';
+     var medalliaEnvironment='Prod';
+
+</script>
+<!-- End Medallia Script-->
+
+
+
+
+
+
+        <script>
+  var mmAds = 
+  {"zone30":[{"id":2992,"zone":30,"dismiss":0,"heading":"\u003cfont color=\"blue\"\u003eInformation\u003c/font\u003e","subheading":"","description":"L\u0027augmentation du coût des matières premières et des transports nous contraint d\u0027effectuer une mise à jour de nos tarifs sur certaines références. Henry Schein se mobilise afin de maintenir pour vous les meilleurs prix.","offer":{"buy":"","get":""},"align":"","theme":"","images":{"small":"","medium":"","large":"","extralarge":""},"alternatetext":"\u003cfont color=\"blue\"\u003eInformation\u003c/font\u003e","manufacturer":{"code":"","name":""},"buttontext":"","product":{"itemcode":"","uom":"","promocode":"","showprices":"FALSE"},"tag":"","link":{"url":"/AdRedir.aspx?adId=2992\u0026PromoCode=\u0026PromoCode2=\u0026ciid=2992\u0026cachename=Advertising\u0026PageGroupId=0\u0026url=/fr-fr/Marketing/OfferDetails.aspx\u0026DP=FALSE","target":"_self","follow":0,"analytics":{"ibm":"","google":"DENTAL_september2019%5cdent0919_099_fr-fr_z30"}},"sunset":""}]}
+</script>
+
+
+        <div class="nocrawler">
+            
+        </div>
+
+        <div data-zone="48" data-type="flash-promo" data-classes="flash-sale" data-column="1"></div>
+
+        <script>
+            if (typeof mmAds != 'undefined' && mmAds != null) {
+                HSZones(mmAds);
+            }
+        </script>
+
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_ucLoginMyAccountSidebar_cvInvalidUser"), document.getElementById("ctl00_ucHeader_ucSessionBar_ucLogin_cvInvalidUser"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_ucLoginMyAccountSidebar_cvInvalidUser = document.all ? document.all["ctl00_ucLoginMyAccountSidebar_cvInvalidUser"] : document.getElementById("ctl00_ucLoginMyAccountSidebar_cvInvalidUser");
+ctl00_ucLoginMyAccountSidebar_cvInvalidUser.display = "Dynamic";
+ctl00_ucLoginMyAccountSidebar_cvInvalidUser.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var ctl00_ucHeader_ucSessionBar_ucLogin_cvInvalidUser = document.all ? document.all["ctl00_ucHeader_ucSessionBar_ucLogin_cvInvalidUser"] : document.getElementById("ctl00_ucHeader_ucSessionBar_ucLogin_cvInvalidUser");
+ctl00_ucHeader_ucSessionBar_ucLogin_cvInvalidUser.display = "Dynamic";
+ctl00_ucHeader_ucSessionBar_ucLogin_cvInvalidUser.evaluationfunction = "CustomValidatorEvaluateIsValid";
+//]]>
+</script>
+
+<script>
+	var countryAndLanguage = 'fr-fr';
+	var browserRequirements = {};
+	browserRequirements['crios'] = 30.0;
+	browserRequirements['chrome'] = 30.0;
+	browserRequirements['ie'] = 11.0;
+	browserRequirements['msie'] = 11.0;
+	browserRequirements['internetexplorer'] = 11.0;
+	browserRequirements['firefox'] = 27.0;
+	browserRequirements['applemac-safari'] = 7.0;
+	browserRequirements['trident'] = 7.0;
+	var sayswho = (function() {
+		var ua = navigator.userAgent, tem, 
+		M = ua.match(/(crios|chrome|ie|msie|internetexplorer|firefox|applemac-safari|trident(?=\/))\/?\s*(\d+.\d+)/i) || [];
+
+		if(/trident/i.test(M[1])) {
+			tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+			return 'IE '+(tem[1] || '');
+		}
+
+		if(M[1] === 'Chrome') {
+			tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
+			if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+		}
+
+		M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
+
+		if((tem = ua.match(/version\/(\d+)/i)) != null) {
+			M.splice(1, 1, tem[1]);
+		}
+
+		return M;
+	})();
+
+	var browserAndVersion = [];
+
+	try {
+		browserAndVersion = sayswho.split(' ');
+	} catch (error) {
+		browserAndVersion = sayswho;
+	}
+
+ var browserVersionIdentified = browserRequirements[browserAndVersion[0].toLowerCase()];
+	if (browserVersionIdentified && parseInt(browserAndVersion[1]) < browserVersionIdentified) {
+		var browserUpgradePageUrl = window.location.protocol + '//' + window.location.host + '/' + countryAndLanguage + '/' + 'BrowserUpgrade.aspx';
+		window.location = browserUpgradePageUrl;
+	}
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+dataLayer.push({ 
+  'ecommerce': { 
+     'detail': { 
+         'actionField': {'list': 'Product Detail Page'}, 
+         'products': [{ 
+           'name': 'Aiguilles anesthésie Intraligamentaires CYBERTECH - 30g S - 0.30x13mm - Boîte de 100', 
+           'id': '900-6527',
+           'brand': 'CYBERTECH',
+           'category': 'GENCABI_Anesthésie-Pharmacie_Aiguilles',
+           'variant': 'UN'
+         }]
+     }
+  }
+});
+dataLayer.push({ 
+'event': 'productClick', 
+  'ecommerce': { 
+     'click': { 
+         'actionField': {'list': 'Search Result'}, 
+         'products': [{ 
+           'name': 'Aiguilles anesthésie Intraligamentaires CYBERTECH - 30g S - 0.30x13mm - Boîte de 100', 
+           'id': '900-6527',
+           'brand': 'CYBERTECH',
+           'category': 'GENCABI_Anesthésie-Pharmacie_Aiguilles',
+           'variant': 'UN'
+         }]
+     }
+  }
+});
+window.__TsmHiddenField = $get('ctl00_ScriptManager_TSM');hsDashboard('remove');
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+$(document).ready(function(){
+gWebsiteServerName='http://www.henryschein.fr';
+gCurrentDivisionId='dental';
+SearchBarAutoComplete.RegisterAutoComplete('#ctl00_ucHeader_ucSearchBarHeaderbar_txtSearch', '#ctl00_ucHeader_ucSearchBarHeaderbar_htmlSearchButton', 'Single_Column');
+});
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+MessagePanelHelper.Hook_ValidationSubmission();var deferredActions = deferredActions || [];deferredActions.push({fn: "runLiveChat",order: 1});
+document.getElementById('ctl00_ucLoginMyAccountSidebar_cvInvalidUser').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_ucLoginMyAccountSidebar_cvInvalidUser'));
+}
+
+document.getElementById('ctl00_ucHeader_ucSessionBar_ucLogin_cvInvalidUser').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ctl00_ucHeader_ucSessionBar_ucLogin_cvInvalidUser'));
+}
+//]]>
+</script>
+</form>
+    
+
+    
+</body>
+</html>
+
+<div id="PageProgressBar" class="loading" style="display: none;">
+    <br />
+    <img id="ctl01_imgProgress" src="/App_Themes/Harmony/images/Preloader.GIF" style="border-width:0px;" /><br />
+    S'il vous plaît attendre.
+</div>
+
+
