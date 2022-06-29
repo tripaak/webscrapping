@@ -16,7 +16,7 @@ for prop in properties:
     print(location)
     print(price)
     print(description)
-    with open('pap_fr_details.text', 'a') as f:
+    with open('data/pap_fr_details.text', 'a') as f:
         # f.write(type_of_ad)
         f.write(location)
         f.write(price)
